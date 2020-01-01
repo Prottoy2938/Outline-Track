@@ -1,5 +1,5 @@
 import React from "react"
-import HomepageTree from "../components/homepagetree"
+import HomepageTree from "../components/homepage/homepagetree"
 import SEO from "../components/seo"
 
 const IndexPage = () => (

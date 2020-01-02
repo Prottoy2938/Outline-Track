@@ -1,1 +1,1 @@
-new font,  border between big component
+new font,  border between big component,darkmode with context api, webapps might load slowly as they are hosted on subdomain on another platform

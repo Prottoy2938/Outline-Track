@@ -1,5 +1,5 @@
 import React from "react"
-import AutoTyping from "./AutoTyping"
+import AutoTyping from "../AutoTyping"
 import SearchInput from "./searchInput"
 import "../styles/homepagetreeStyles.css"
 
@@ -12,11 +12,11 @@ const HomepageTree = props => {
       <form className="form" onSubmit={handleSubmit}>
         <AutoTyping
           strings={[
-            "Search for <span style='border-bottom: 2px solid #004ade'>Weather App</span>",
-            "Search for TodoList with <span style='border-bottom: 2px solid #a32f08'>React</span>",
-            "Search for <span style='border-bottom: 2px solid #000000'>LightsOut</strong>",
-            "Search for <span  style='border-bottom: 2px solid #6b492f'>VendingMachine</>",
-            "<span style='border-bottom: 2px solid #db0075'>Search for Small Webapps</>",
+            "<span>Search for <span style='border-bottom: 2px solid #004ade'>Weather App</span></span>",
+            "<span>Search for <span style='border-bottom: 2px solid #000000'>LightsOut</span></span>",
+            "<span>Search for <span style='border-bottom: 2px solid #a32f08'>TodoList</span></span>",
+            "<span>Search for <span  style='border-bottom: 2px solid #6b492f'>VendingMachine</></span>",
+            "<span><span style='border-bottom: 2px solid #db0075'>Search for Small Webapps</></span>",
           ]}
         />
 

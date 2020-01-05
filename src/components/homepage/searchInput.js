@@ -10,7 +10,6 @@ export default function CustomizedInputBase() {
       <InputBase
         placeholder="search"
         inputProps={{ "aria-label": "search google maps" }}
-        autoFocus
         className="input"
       />
       <IconButton type="submit" aria-label="search">

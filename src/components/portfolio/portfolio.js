@@ -27,8 +27,13 @@ const styles = theme => ({
       marginLeft: "20%",
     },
     [sizes.down("sm")]: {
-      marginLeft: "5%",
+      marginLeft: "20%",
       fontSize: "0.77em",
+    },
+    [sizes.down("xs")]: {
+      borderTop: "4px solid",
+      marginLeft: "10%",
+      fontSize: "0.7em",
     },
   },
 })

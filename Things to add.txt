@@ -1,1 +1,7 @@
-new font,  border between big component,darkmode with context api, webapps might load slowly as they are hosted on subdomain on another platform
+new font, 
+ border between big component,
+darkmode with context api,
+ webapps might load slowly as they are hosted on subdomain on another platform,
+show preview image when hovered on on portfolio box,
+ make a search button with the styles that i saw in adove creative cloud
+hange cursor

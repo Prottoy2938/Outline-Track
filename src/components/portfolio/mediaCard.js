@@ -59,8 +59,9 @@ export default function MediaCard(props) {
         >
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href={props.link}
-            style={{ textDecoration: "none", color: "#020f24" }}
+            style={{ textDecoration: "none", color: "#104e52" }}
           >
             Preview
           </a>

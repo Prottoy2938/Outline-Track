@@ -1,15 +1,19 @@
 import React from "react"
 import AutoTyping from "../AutoTyping"
 import SearchInput from "./searchInput"
+import AutoComplete from "./AutoComplete"
 import "../styles/homepagetreeStyles.css"
-
+import { withStyles } from "@material-ui/core/styles"
+import styles from "../styles/homepagetreeStyles"
 const HomepageTree = props => {
+  const { classes } = props
   const handleSubmit = e => {
     e.preventDefault()
   }
+
   return (
-    <div className="container">
-      <form className="form" onSubmit={handleSubmit}>
+    <div className={classes.container}>
+      <form className={classes.form} onSubmit={handleSubmit}>
         <AutoTyping
           strings={[
             "<span>Search for <span style='border-bottom: 2px solid #004ade'>Weather App</span></span>",
@@ -25,4 +29,4 @@ const HomepageTree = props => {
     </div>
   )
 }
-export default HomepageTree
+export default withStyles(styles)(HomepageTree)

@@ -1,0 +1,25 @@
+/* .react-autosuggest__container {
+  width: 700px;
+  border: none;
+  background-color: white;
+  display: flex;
+} */
+.search-container {
+  width: 700px;
+  border: 2px solid #013942;
+  border-radius: 40px;
+  margin: 0;
+}
+.react-autosuggest__input {
+  height: 50px;
+  float: left;
+  border: none;
+  width: 90%;
+  background: none;
+}
+.react-autosuggest__input--focused {
+  outline: none;
+}
+#react-autowhatever-1 {
+  display: none;
+}

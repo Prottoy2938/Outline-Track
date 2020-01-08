@@ -3,3 +3,14 @@ html,
 body {
   font-family: "Kulim Park", sans-serif !important;
 }
+.Gallery__NavigationArrow button {
+  outline: none;
+}
+.project-title {
+  border-bottom: 4px solid;
+  border-image: linear-gradient(to right, #a84832, #3246a8);
+  border-image-slice: 1;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}

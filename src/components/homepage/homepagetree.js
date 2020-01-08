@@ -1,8 +1,6 @@
 import React from "react"
 import AutoTyping from "../AutoTyping"
 import SearchInput from "./searchInput"
-import AutoComplete from "./AutoComplete"
-import "../styles/homepagetreeStyles.css"
 import { withStyles } from "@material-ui/core/styles"
 import styles from "../styles/homepagetreeStyles"
 const HomepageTree = props => {

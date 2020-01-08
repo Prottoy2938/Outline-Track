@@ -9,7 +9,8 @@ import Divider from "@material-ui/core/Divider"
 import ListItemText from "@material-ui/core/ListItemText"
 import { withStyles } from "@material-ui/core/styles"
 import styles from "../styles/searchInputStyles"
-
+import { createRedirect } from "gatsby-plugin-client-side-redirect"
+import { navigate } from "gatsby"
 function SearchInput(props) {
   const { classes } = props
   const [value, setvalue] = useState("")
@@ -46,10 +47,23 @@ function SearchInput(props) {
     settest(e.target.value)
   }
 
+  const handleFormSubmit = e => {
+    e.preventDefault()
+    const lowerCaseValue = value.toLocaleLowerCase()
+    const pageURL = lowerCaseValue.replace(/\s/g, "-")
+    console.log(pageURL)
+
+    navigate(`/${pageURL}`)
+  }
+
   const handleSuggestionClick = value => {
+    const lowerCaseValue = value.toLocaleLowerCase()
+    const pageURL = lowerCaseValue.replace(/\s/g, "-")
     setvalue(value)
     setSuggestions([])
+    navigate(`/${pageURL}`)
   }
+
   const projectShower = () => {
     return suggestions.map(s => (
       <React.Fragment key={uuid()}>
@@ -75,7 +89,7 @@ function SearchInput(props) {
 
   return (
     <>
-      <form className={classes.searchContainer}>
+      <form className={classes.searchContainer} onSubmit={handleFormSubmit}>
         <InputBase
           type="text"
           value={value}

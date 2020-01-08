@@ -5,3 +5,4 @@ darkmode with context api,
 show preview image when hovered on on portfolio box,
  make a search button with the styles that i saw in adove creative cloud
 hange cursor
+add a sound option from howlerjs, like dark mode

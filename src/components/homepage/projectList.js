@@ -1,4 +1,3 @@
-import icon from "../../images/gatsby-icon.png"
 import cardIcon from "../../images/icons/card.png"
 import colorPickerIcon from "../../images/icons/color.png"
 import diceIcon from "../../images/icons/dice.png"
@@ -13,6 +12,7 @@ import todoIcon from "../../images/icons/todo.png"
 import todoListIcon from "../../images/icons/todolist.png"
 import vendingMachingIcon from "../../images/icons/vending.png"
 import weatherIcon from "../../images/icons/weather.png"
+import nayumpIcon from "../../images/icons/flower.png"
 
 export default [
   {
@@ -20,7 +20,7 @@ export default [
     icon: cardIcon,
   },
   {
-    name: "Color Picker React",
+    name: "React Color Picker",
     icon: colorPickerIcon,
   },
   {
@@ -45,7 +45,7 @@ export default [
   },
 
   {
-    name: "Pokemon game",
+    name: "Pokemon",
     icon: pokemonIcon,
   },
   {
@@ -53,11 +53,11 @@ export default [
     icon: signInIcon,
   },
   {
-    name: "TodoApp with React",
+    name: "Task Manager",
     icon: todoIcon,
   },
   {
-    name: "TodoList",
+    name: "Simple todoapp with react",
     icon: todoListIcon,
   },
   {
@@ -69,7 +69,11 @@ export default [
     icon: weatherIcon,
   },
   {
-    name: "Simple todolist with react hooks",
+    name: "Simple todoapp with react",
     icon: hookIcon,
+  },
+  {
+    name: "Nayump",
+    icon: nayumpIcon,
   },
 ]

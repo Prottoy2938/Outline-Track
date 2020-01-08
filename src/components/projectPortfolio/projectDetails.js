@@ -36,7 +36,6 @@ import todo2Img from "../../images/todo/todo2.png"
 import signInImg from "../../images/signIn/signIn.png"
 import signIn1Img from "../../images/signIn/signIn1.png"
 import signIn2Img from "../../images/signIn/signIn2.png"
-import signIn3Img from "../../images/signIn/signIn3.png"
 import signIn4Img from "../../images/signIn/signIn4.png"
 import lightsOutImg from "../../images/lightsOut/lightsOut (1).png"
 import lightsOut1Img from "../../images/lightsOut/lightsOut (2).png"
@@ -127,7 +126,7 @@ const pokemon = {
   title: "Pokemon",
   github: "https://prottoy2938.github.io/sm-pokemon/",
   page: "https://github.com/Prottoy2938/sm-pokemon",
-  img: [pokemonImg, pokemon1Img, pokemon2Img],
+  img: [pokemon2Img, pokemon1Img, pokemonImg],
   description: "A small webapp based on pokemon",
   facts: [
     "Made with Reactjs framework",
@@ -159,7 +158,7 @@ const vendingMachine = {
     vendingMachine2Img,
     vendingMachine3Img,
   ],
-  description: "Small vanding machine webapp",
+  description: "Small vending machine webapp",
   facts: [
     "Made with Reactjs framework",
     "Has starter code for understanding React Router, Layout",
@@ -195,13 +194,13 @@ const reactSignInPage = {
   title: "Sign In Page",
   github: "https://github.com/Prottoy2938/sign-in-page",
   page: "https://prottoy2938.github.io/sign-in-page/",
-  img: [signInImg, signIn1Img, signIn2Img, signIn3Img, signIn4Img],
+  img: [signInImg, signIn4Img, signIn1Img, signIn2Img],
   description: "SignIn page made with React",
   facts: [
     "Uses Reactjs Framework",
+    "Has 3 language option",
     "Has dark mode",
     "Uses context api",
-    "Saves todo to local storages",
   ],
 }
 const lightsOut = {
@@ -214,7 +213,6 @@ const lightsOut = {
     "Single Page webapp",
     "Uses Reactjs Framework",
     "Has all the logic of a lights out game",
-    "Has good css",
     "Made with a React Bootcamp Course",
   ],
 }

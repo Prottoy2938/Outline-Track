@@ -14,3 +14,34 @@ body {
   margin: 0 auto;
   margin-bottom: 15px;
 }
+.MuiAutocomplete-root {
+  display: inline;
+}
+.FreeSolo-input-462 {
+  display: inline;
+}
+
+/* both are same */
+.MuiFormControl-root {
+  width: 80%;
+}
+.MuiTextField-root {
+  width: 80%;
+}
+.MuiFormControl-fullWidth {
+  width: 80%;
+}
+/* both are same */
+
+/*to make the searchbar fullwidth without breaking the component */
+.MuiInputBase-root {
+  width: 100%;
+}
+
+.MuiInputLabel-formControl {
+  margin-left: 5px;
+}
+
+.MuiOutlinedInput-root {
+  padding-right: 10px !important;
+}

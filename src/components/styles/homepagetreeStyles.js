@@ -14,19 +14,19 @@ const styles = theme => ({
     },
   },
   form: {
-    width: "50vw",
+    width: "60vw",
     position: "absolute",
     margin: "35vh auto",
     left: "0",
     right: "0",
     [sizes.down("lg")]: {
-      width: "60vw",
+      width: "80vw",
     },
     [sizes.down("md")]: {
-      width: "73.4vw",
+      width: "100vw",
     },
     [sizes.down("sm")]: {
-      width: "83vw",
+      width: "100vw",
     },
   },
 })

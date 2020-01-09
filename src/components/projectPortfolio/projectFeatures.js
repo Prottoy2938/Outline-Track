@@ -7,6 +7,7 @@ import RadioGroup from "@material-ui/core/RadioGroup"
 import FormControlLabel from "@material-ui/core/FormControlLabel"
 import { withStyles } from "@material-ui/core/styles"
 import styles from "../styles/projectFeatureStyles"
+import uuid from "uuid/v4"
 
 const ProjectFeature = props => {
   const mq = window.matchMedia("(max-width: 570px)")
@@ -26,6 +27,7 @@ const ProjectFeature = props => {
         >
           {facts.map(fact => (
             <FormControlLabel
+              key={uuid()}
               value="checked"
               control={<Radio color="default" />}
               label={fact}

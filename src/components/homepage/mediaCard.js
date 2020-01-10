@@ -1,5 +1,5 @@
-import React from "react"
-import { makeStyles } from "@material-ui/core/styles"
+import React, { useContext } from "react"
+import { withStyles } from "@material-ui/core/styles"
 import Card from "@material-ui/core/Card"
 import CardActionArea from "@material-ui/core/CardActionArea"
 import CardActions from "@material-ui/core/CardActions"
@@ -7,32 +7,24 @@ import CardContent from "@material-ui/core/CardContent"
 import CardMedia from "@material-ui/core/CardMedia"
 import Button from "@material-ui/core/Button"
 import Typography from "@material-ui/core/Typography"
+import { ThemeContext } from "../contexts/themeContext"
+import styles from "../styles/mediaCardStyles"
 
-const useStyles = makeStyles({
-  card: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 200,
-  },
-  learnMorebtn: {
-    borderBottom: "4px solid",
+function MediaCard(props) {
+  const { classes } = props
+  const { isDarkMode } = useContext(ThemeContext)
+  const previewButtonStyle = {
+    backgroundColor: isDarkMode && "#b9c7de",
+    boxShadow: isDarkMode && "none",
+  }
+  const learnMorebtnStyle = {
     borderImage:
-      "linear-gradient(to right, rgb(0, 210, 255), rgb(58, 123, 213))",
-    borderImageSlice: "1",
-    marginBottom: "1vh",
-  },
-  previewButton: {
-    backgroundColor: "rgb(2, 213, 250)",
-    "&:hover": {
-      backgroundColor: "rgb(2, 250, 250)",
-    },
-  },
-})
-
-export default function MediaCard(props) {
-  const classes = useStyles()
-
+      isDarkMode &&
+      "linear-gradient(to right, rgb(35,64,77), rgb(58, 123, 213))",
+    borderBottom: isDarkMode && "4px solid",
+    borderImageSlice: isDarkMode && "1",
+    marginBottom: isDarkMode && "1vh",
+  }
   return (
     <Card className={classes.card}>
       <CardActionArea>
@@ -43,11 +35,11 @@ export default function MediaCard(props) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            {props.title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            lorem8 fasdf adfj adfj adfkjk asldkfj asdf laksdf af wi akdjf askdf
+            lskdf alkdf lsdf klsdfjs afladkf adfksdf
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -55,21 +47,32 @@ export default function MediaCard(props) {
         <Button
           size="small"
           variant="contained"
+          style={previewButtonStyle}
           className={classes.previewButton}
         >
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href={props.link}
-            style={{ textDecoration: "none", color: "#104e52" }}
+            href={props.previewLink || null}
+            style={{
+              textDecoration: "none",
+              color: isDarkMode ? "black" : "#104e52",
+            }}
           >
             Preview
           </a>
         </Button>
-        <Button size="small" color="primary" className={classes.learnMorebtn}>
+        <Button
+          size="small"
+          color="primary"
+          className={classes.learnMorebtn}
+          style={learnMorebtnStyle}
+          href={props.learnMoreLink || null}
+        >
           Learn More
         </Button>
       </CardActions>
     </Card>
   )
 }
+export default withStyles(styles)(MediaCard)

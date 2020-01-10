@@ -10,5 +10,8 @@ export default initialValue => {
   const reset = () => {
     setstate("")
   }
-  return [state, handleChange, reset]
+  const toggle = () => {
+    setstate(!state)
+  }
+  return [state, toggle, handleChange, reset]
 }

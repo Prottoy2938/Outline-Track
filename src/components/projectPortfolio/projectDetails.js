@@ -225,6 +225,14 @@ const taskManager = {
   description: "Task Manger Webapp made with React",
   facts: ["Uses Reactjs Framework", "Has good css"],
 }
+const foodRecipe = {
+  title: "Food Recipe",
+  description: "A web application for searching food recipe online",
+  facts: ["Working in Progress"],
+  img: [taskManagerImg, taskManager1Img, taskManager2Img],
+  github: null,
+  page: null,
+}
 
 export {
   reactColorPicker,
@@ -241,4 +249,5 @@ export {
   reactSignInPage,
   lightsOut,
   taskManager,
+  foodRecipe,
 }

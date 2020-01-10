@@ -1,14 +1,23 @@
 import React from "react"
-import HomepageTree from "../components/homepage/homepagetree"
-import Portfolio from "../components/portfolio/portfolio"
 import SEO from "../components/seo"
+import HomepageTree from "../components/homepage/homepagetree"
+import Portfolio from "../components/homepage/portfolio"
+import BottomSide from "../components/homepage/bottomSide"
+import AppbarLayout from "../components/appbar/appbarlayout"
+import { ThemeProvider } from "../components/contexts/themeContext"
 
-const IndexPage = () => (
-  <div>
-    <SEO title="Home" />
-    <HomepageTree />
-    <Portfolio />
-  </div>
-)
+const IndexPage = () => {
+  return (
+    <div>
+      <SEO title="Home" />
+      <ThemeProvider>
+        <AppbarLayout />
+        <HomepageTree />
+        <Portfolio />
+        <BottomSide />
+      </ThemeProvider>
+    </div>
+  )
+}
 
 export default IndexPage

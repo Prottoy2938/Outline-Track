@@ -45,3 +45,7 @@ body {
 .MuiOutlinedInput-root {
   padding-right: 10px !important;
 }
+
+div .MuiTypography-body1 {
+  margin-left: 20px;
+}

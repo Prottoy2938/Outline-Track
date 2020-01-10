@@ -117,7 +117,7 @@
 // export default withStyles(styles)(SearchInput)
 
 /* eslint-disable no-use-before-define */
-import React, { useState } from "react"
+import React, { useState, useContext } from "react"
 import { navigate } from "gatsby"
 import ProjectList from "./projectList"
 import TextField from "@material-ui/core/TextField"
@@ -127,8 +127,10 @@ import styles from "../styles/searchInputStyles"
 import InputAdornment from "@material-ui/core/InputAdornment"
 import SearchIcon from "@material-ui/icons/Search"
 import IconButton from "@material-ui/core/IconButton"
+import { ThemeContext } from "../contexts/themeContext"
 
 function FreeSolo(props) {
+  const { isDarkMode } = useContext(ThemeContext)
   const [value, setvalue] = useState("")
   const [url, seturl] = useState("")
   const { classes } = props
@@ -153,6 +155,12 @@ function FreeSolo(props) {
   const handleIconClick = () => {
     navigate(`/${url}`)
   }
+
+  //styles for changing theme
+  const buttonColor = {
+    backgroundColor: isDarkMode && "rgb(81, 89, 105)",
+  }
+
   return (
     <div className={classes.searchContainer}>
       <Autocomplete
@@ -193,7 +201,9 @@ function FreeSolo(props) {
           />
         )}
       />
-      <button className={classes.button}>Search</button>
+      <button className={classes.button} style={buttonColor}>
+        Search
+      </button>
     </div>
   )
 }

@@ -3,6 +3,9 @@ const styles = {
   container: {
     marginTop: "50vh",
     paddingBottom: "30vh",
+    [sizes.down("md")]: {
+      marginTop: "30vh",
+    },
   },
   button: {
     width: "300px",
@@ -16,16 +19,19 @@ const styles = {
       backgroundColor: "white",
     },
     [sizes.down("md")]: {
+      display: "none",
       position: "static",
       marginLeft: "32%",
       margin: "0 auto",
     },
     [sizes.down("sm")]: {
+      display: "none",
       position: "static",
       marginLeft: "30%",
       justifyContent: "center",
     },
     [sizes.down("xs")]: {
+      display: "none",
       position: "static",
       marginLeft: "20vw",
       justifyContent: "center",

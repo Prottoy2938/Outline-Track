@@ -8,6 +8,8 @@ import IconButton from "@material-ui/core/IconButton"
 import Brightness4Icon from "@material-ui/icons/Brightness4"
 import BrightnessHighIcon from "@material-ui/icons/BrightnessHigh"
 import { ThemeContext } from "../contexts/themeContext"
+import { navigate } from "gatsby"
+
 const styles = {
   root: {
     flexGrow: 1,
@@ -25,6 +27,10 @@ const styles = {
     left: "20px",
     fontSize: "1em",
     color: "black",
+    "&:hover": {
+      cursor: "pointer",
+      borderBottom: "2px solid black",
+    },
   },
   iconButton: {
     position: "fixed",
@@ -108,7 +114,11 @@ class CollapsibleAppBar extends React.PureComponent {
           className={`${classes.root} ${this.getScrollClassName()}`}
         >
           <Toolbar>
-            <Typography className={classes.title} style={titleColor}>
+            <Typography
+              className={classes.title}
+              style={titleColor}
+              onClick={() => navigate("/")}
+            >
               OUTLINE
             </Typography>
             <IconButton

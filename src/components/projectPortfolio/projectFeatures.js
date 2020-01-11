@@ -8,6 +8,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel"
 import { withStyles } from "@material-ui/core/styles"
 import styles from "../styles/projectFeatureStyles"
 import uuid from "uuid/v4"
+import IconButton from "@material-ui/core/IconButton"
 
 const ProjectFeature = props => {
   const mq = window.matchMedia("(max-width: 570px)")
@@ -16,6 +17,11 @@ const ProjectFeature = props => {
   return (
     <div className={classes.ProjectFeatureContainer}>
       <div className={classes.detailsContainer}>
+        {!mq.matches && (
+          <IconButton aria-label="Back" className={classes.iconButton} href="/">
+            <GitHubIcon />
+          </IconButton>
+        )}
         {!mq.matches && <h1 className={classes.title}>{title}</h1>}
 
         <h3 className={classes.description}>{description}</h3>

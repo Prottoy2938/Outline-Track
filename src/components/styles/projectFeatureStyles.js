@@ -17,6 +17,13 @@ const styles = {
       marginTop: "30px",
     },
   },
+  iconButton: {
+    position: "absolute",
+    left: 0,
+    [sizes.down("lg")]: {
+      display: "none",
+    },
+  },
   title: {
     marginTop: "10px",
     borderBottom: "4px solid",

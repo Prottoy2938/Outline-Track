@@ -30,7 +30,7 @@ function MediaCard(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="https://images.pexels.com/photos/2822949/pexels-photo-2822949.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          image={props.img}
           title="Contemplative Reptile"
         />
         <CardContent>
@@ -38,8 +38,7 @@ function MediaCard(props) {
             {props.title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            lorem8 fasdf adfj adfj adfkjk asldkfj asdf laksdf af wi akdjf askdf
-            lskdf alkdf lsdf klsdfjs afladkf adfksdf
+            {props.description}
           </Typography>
         </CardContent>
       </CardActionArea>

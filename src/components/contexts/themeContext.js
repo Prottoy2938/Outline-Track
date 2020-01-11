@@ -1,10 +1,14 @@
-import React, { createContext } from "react"
-import formContext from "./formContext"
+import React, { createContext, useState } from "react"
 
 export const ThemeContext = createContext()
 
 export function ThemeProvider(props) {
-  const [isDarkMode, toggleDarkMode] = formContext(false)
+  const [isDarkMode, setDarkMode] = useState(false)
+
+  const toggleDarkMode = () => {
+    setDarkMode(!isDarkMode)
+  }
+
   return (
     <ThemeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
       {props.children}

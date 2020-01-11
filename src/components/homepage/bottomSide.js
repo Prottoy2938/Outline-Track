@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react"
+import React, { useState, useContext, useEffect } from "react"
 import { withStyles } from "@material-ui/core/styles"
 import List from "@material-ui/core/List"
 import ListItem from "@material-ui/core/ListItem"
@@ -11,25 +11,59 @@ import DashboardIcon from "@material-ui/icons/Dashboard"
 import Button from "@material-ui/core/Button"
 import GitHubIcon from "@material-ui/icons/GitHub"
 import { ThemeContext } from "../contexts/themeContext"
+import AboutMe from "./aboutme"
 import InfoIcon from "@material-ui/icons/Info"
 import styles from "../styles/bottomSideStyles"
+import AboutProject from "./aboutProject"
 
 function BottomSide(props) {
   const { classes } = props
   const { isDarkMode } = useContext(ThemeContext)
   const [open, setOpen] = useState(false)
+  const [aboutMeOpen, setaboutMeOpen] = useState(false)
+  const [aboutProjectOpen, setaboutProjectOpen] = useState(false)
+
   const handleClick = () => {
     setOpen(!open)
   }
+
+  const handleAbout_Me_Click = () => {
+    setaboutMeOpen(!aboutMeOpen)
+  }
+
+  const shutDown_AboutMe = () => {
+    setaboutMeOpen(false)
+  }
+  const handleAbout_Project_Click = () => {
+    setaboutProjectOpen(true)
+  }
+
+  const shutDown_Project = reason => {
+    if (reason === "clickaway") {
+      return
+    }
+
+    setaboutProjectOpen(false)
+  }
+  useEffect(() => {
+    if (aboutProjectOpen === true) {
+      setTimeout(() => {
+        setaboutProjectOpen(false)
+      }, 2500)
+    }
+  }, [aboutProjectOpen])
+
   const buttonBorder = {
     borderRadius: !open && "5px",
     borderBottom: isDarkMode
-      ? "2px solid #6c6c6c"
+      ? !open && "2px solid #6c6c6c"
       : !open && "2px solid #fcba03",
     borderTop: isDarkMode ? "2px solid #6c6c6c" : "2px solid #fcba03",
-    borderLeft: isDarkMode ? "2px solid #6c6c6c" : !open && "2px solid #fcba03",
+    borderLeft: isDarkMode
+      ? !open && "2px solid #6c6c6c"
+      : !open && "2px solid #fcba03",
     borderRight: isDarkMode
-      ? "2px solid #6c6c6c"
+      ? !open && "2px solid #6c6c6c"
       : !open && "2px solid #fcba03",
   }
   return (
@@ -59,7 +93,11 @@ function BottomSide(props) {
           {open ? <ExpandLess /> : <InfoIcon />}
         </ListItem>
         <Collapse in={open} timeout="auto" unmountOnExit>
-          <List component="div" disablePadding>
+          <List
+            component="div"
+            disablePadding
+            onClick={handleAbout_Project_Click}
+          >
             <ListItem button className={classes.nested}>
               <ListItemIcon>
                 <DashboardIcon />
@@ -67,7 +105,7 @@ function BottomSide(props) {
               <ListItemText primary="This Project" />
             </ListItem>
           </List>
-          <List component="div" disablePadding>
+          <List component="div" disablePadding onClick={handleAbout_Me_Click}>
             <ListItem button className={classes.nested}>
               <ListItemIcon>
                 <HdrStrongIcon />
@@ -77,6 +115,8 @@ function BottomSide(props) {
           </List>
         </Collapse>
       </List>
+      <AboutMe open={aboutMeOpen} shutdown={shutDown_AboutMe} />
+      <AboutProject open={aboutProjectOpen} shutdown={shutDown_Project} />
     </div>
   )
 }

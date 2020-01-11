@@ -43,6 +43,8 @@ import lightsOut2Img from "../../images/lightsOut/lightsOut (3).png"
 import taskManagerImg from "../../images/todoReact/todoReact.png"
 import taskManager1Img from "../../images/todoReact/todoReact1.png"
 import taskManager2Img from "../../images/todoReact/todoReact2.png"
+import foodRecipeImg from "../../images/foodRecipe/foodRecipe.png"
+import workingInProgress from "../../images/foodRecipe/workingInProgress.jpg"
 
 const reactColorPicker = {
   title: "React Color Picker",
@@ -227,9 +229,9 @@ const taskManager = {
 }
 const foodRecipe = {
   title: "Food Recipe",
-  description: "A web application for searching food recipe online",
+  description: "A web application based on getting recipe for cooking foods",
   facts: ["Working in Progress"],
-  img: [taskManagerImg, taskManager1Img, taskManager2Img],
+  img: [foodRecipeImg, workingInProgress],
   github: null,
   page: null,
 }

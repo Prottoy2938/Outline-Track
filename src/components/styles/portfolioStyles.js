@@ -23,7 +23,6 @@ const styles = {
       fontSize: "0.77em",
     },
     [sizes.down("xs")]: {
-      borderTop: "4px solid",
       marginLeft: "10%",
       fontSize: "0.7em",
     },

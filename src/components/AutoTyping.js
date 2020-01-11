@@ -18,8 +18,6 @@ class AutoTyping extends React.Component {
   }
 
   componentWillUnmount() {
-    console.log("ComponentWillUnmount ran")
-
     // Make sure to destroy Typed instance on unmounting
     // to prevent memory leaks
     this.typed.destroy()

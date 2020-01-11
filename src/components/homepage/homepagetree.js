@@ -12,7 +12,6 @@ const HomepageTree = props => {
   const handleSubmit = e => {
     e.preventDefault()
   }
-  console.log(isDarkMode)
 
   return (
     <div

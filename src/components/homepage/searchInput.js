@@ -201,7 +201,11 @@ function FreeSolo(props) {
           />
         )}
       />
-      <button className={classes.button} style={buttonColor}>
+      <button
+        className={classes.button}
+        style={buttonColor}
+        onClick={handleIconClick}
+      >
         Search
       </button>
     </div>

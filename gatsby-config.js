@@ -5,15 +5,8 @@ module.exports = {
     author: `Prottay Rudra`,
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-material-ui`,
-      options: {
-        stylesProvider: {
-          injectFirst: true,
-        },
-      },
-    },
-    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-material-ui`,
+
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

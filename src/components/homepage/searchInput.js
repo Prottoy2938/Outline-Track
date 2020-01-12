@@ -15,8 +15,6 @@ function FreeSolo(props) {
   const [url, seturl] = useState("")
   const { classes } = props
 
-  const ms = window.matchMedia("(max-width: 991.98px)")
-
   const handleChange = e => {
     const input = e.target.value
     setvalue(input)
@@ -55,28 +53,40 @@ function FreeSolo(props) {
         renderInput={params => (
           <TextField
             {...params}
-            label={!ms.matches && "Find..."}
-            variant={ms.matches ? "outlined" : "standard"}
-            InputProps={
-              ms.matches
-                ? {
-                    ...params.InputProps,
-                    type: "search",
-                    endAdornment: (
-                      <InputAdornment position="end">
-                        <IconButton onClick={handleIconClick}>
-                          <SearchIcon />
-                        </IconButton>
-                      </InputAdornment>
-                    ),
-                  }
-                : {
-                    ...params.InputProps,
-                    type: "search",
-                  }
-            }
-            // margin="normal"
-            // fullWidth
+            label="Find..."
+            variant="standard"
+            InputProps={{
+              ...params.InputProps,
+              type: "search",
+            }}
+          />
+        )}
+      />
+      <Autocomplete
+        className={classes.mobileInput}
+        freeSolo
+        inputValue={value}
+        onChange={(event, value) => handleSubmit(value)}
+        onInputChange={handleChange}
+        id="free-solo-2-demo"
+        autoComplete={true}
+        disableClearable
+        options={ProjectList.map(option => option.name)}
+        renderInput={params => (
+          <TextField
+            {...params}
+            variant="outlined"
+            InputProps={{
+              ...params.InputProps,
+              type: "search",
+              endAdornment: (
+                <InputAdornment position="end">
+                  <IconButton onClick={handleIconClick}>
+                    <SearchIcon />
+                  </IconButton>
+                </InputAdornment>
+              ),
+            }}
           />
         )}
       />

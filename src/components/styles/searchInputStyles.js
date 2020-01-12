@@ -13,11 +13,17 @@ export default {
     width: "80%",
     padding: ".7vh 0",
     fontSize: "1rem",
-
     fontFamily: "'Kulim Park', sans-serif",
     marginLeft: "3%",
     [sizes.down("md")]: {
       width: "100%",
+      display: "none",
+    },
+  },
+  mobileInput: {
+    display: "none",
+    [sizes.down("md")]: {
+      display: "block",
     },
   },
   button: {

@@ -9,7 +9,6 @@ import InputAdornment from "@material-ui/core/InputAdornment"
 import SearchIcon from "@material-ui/icons/Search"
 import IconButton from "@material-ui/core/IconButton"
 import { ThemeContext } from "../contexts/themeContext"
-
 function FreeSolo(props) {
   const { isDarkMode } = useContext(ThemeContext)
   const [value, setvalue] = useState("")
@@ -39,6 +38,7 @@ function FreeSolo(props) {
   const buttonColor = {
     backgroundColor: isDarkMode && "rgb(81, 89, 105)",
   }
+  console.log("Favicon from icons8")
 
   return (
     <div className={classes.searchContainer}>

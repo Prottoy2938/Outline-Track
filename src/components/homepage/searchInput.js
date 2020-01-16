@@ -46,7 +46,7 @@ function FreeSolo(props) {
         inputValue={value}
         onChange={(event, value) => handleSubmit(value)}
         onInputChange={handleChange}
-        id="free-solo-2-demo"
+        id="free-solo-1-demo"
         autoComplete={true}
         disableClearable
         options={ProjectList.map(option => option.name)}

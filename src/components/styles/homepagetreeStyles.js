@@ -7,13 +7,6 @@ const styles = mode => {
       justifyContent: "center",
       textAlign: "center",
       display: "inline-block",
-      clipPath: "polygon(50% 0%, 100% 0, 100% 43%, 70% 100%, 0 100%, 0 0)",
-      backgroundColor: mode
-        ? "rgba(44, 142, 172, 0.76)"
-        : "rgba(48, 54, 66, 0.76)",
-      [sizes.down("md")]: {
-        clipPath: "polygon(85% 0, 100% 16%, 100% 100%, 0 100%, 0 0)",
-      },
     },
     form: {
       width: "60vw",
@@ -29,6 +22,16 @@ const styles = mode => {
       },
       [sizes.down("sm")]: {
         width: "100vw",
+      },
+    },
+    formContainer: {
+      width: "100%",
+      height: "100%",
+      clipPath: "polygon(50% 0%, 100% 0, 100% 43%, 70% 100%, 0 100%, 0 0)",
+      backgroundColor: "rgba(44, 142, 172, 0.76)",
+
+      [sizes.down("md")]: {
+        clipPath: "polygon(85% 0, 100% 16%, 100% 100%, 0 100%, 0 0)",
       },
     },
   }

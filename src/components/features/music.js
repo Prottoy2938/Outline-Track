@@ -16,9 +16,6 @@ class VideoPlayer extends Component {
       screenfull.exit(findDOMNode(this.refs.player))
     }
 
-    var element = document.fullscreenElement
-    console.log(element)
-
     return (
       <>
         {playVideo ? (

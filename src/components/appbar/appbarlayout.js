@@ -8,6 +8,8 @@ import IconButton from "@material-ui/core/IconButton"
 import Brightness4Icon from "@material-ui/icons/Brightness4"
 import BrightnessHighIcon from "@material-ui/icons/BrightnessHigh"
 import { ThemeContext } from "../contexts/themeContext"
+import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled"
+import PauseCircleFilledIcon from "@material-ui/icons/PauseCircleFilled"
 import { navigate } from "gatsby"
 
 const styles = {
@@ -35,6 +37,10 @@ const styles = {
   iconButton: {
     position: "fixed",
     right: "20px",
+  },
+  musicButton: {
+    position: "fixed",
+    right: "100px",
   },
 }
 
@@ -95,7 +101,12 @@ class CollapsibleAppBar extends React.PureComponent {
   }
 
   render() {
-    const { isDarkMode, toggleDarkMode } = this.context
+    const {
+      isDarkMode,
+      toggleDarkMode,
+      playVideo,
+      toggleplayVideo,
+    } = this.context
     const { classes } = this.props
     const appBarBackground = {
       backgroundColor: isDarkMode
@@ -127,6 +138,14 @@ class CollapsibleAppBar extends React.PureComponent {
               onClick={toggleDarkMode}
             >
               {isDarkMode ? <Brightness4Icon /> : <BrightnessHighIcon />}
+            </IconButton>
+
+            <IconButton
+              aria-label="Brightness"
+              className={classes.musicButton}
+              onClick={toggleplayVideo}
+            >
+              {playVideo ? <PauseCircleFilledIcon /> : <PlayCircleFilledIcon />}
             </IconButton>
           </Toolbar>
         </AppBar>

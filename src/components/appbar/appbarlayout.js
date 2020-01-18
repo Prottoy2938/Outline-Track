@@ -11,38 +11,7 @@ import { ThemeContext } from "../contexts/themeContext"
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled"
 import PauseCircleFilledIcon from "@material-ui/icons/PauseCircleFilled"
 import { navigate } from "gatsby"
-
-const styles = {
-  root: {
-    flexGrow: 1,
-  },
-  show: {
-    transform: "translate(0, 0)",
-    transition: "transform .5s",
-  },
-  hide: {
-    transform: "translate(0, -70px)",
-    transition: "transform .5s",
-  },
-  title: {
-    position: "fixed",
-    left: "20px",
-    fontSize: "1em",
-    color: "black",
-    "&:hover": {
-      cursor: "pointer",
-      borderBottom: "2px solid black",
-    },
-  },
-  iconButton: {
-    position: "fixed",
-    right: "20px",
-  },
-  musicButton: {
-    position: "fixed",
-    right: "100px",
-  },
-}
+import styles from "../styles/appbarLayoutStyles"
 
 class CollapsibleAppBar extends React.PureComponent {
   static contextType = ThemeContext
@@ -57,9 +26,6 @@ class CollapsibleAppBar extends React.PureComponent {
     this.lastScroll = null
 
     this.handleScroll = this.handleScroll.bind(this)
-    // Alternatively, you can throttle scroll events to avoid
-    // updating the state too often. Here using lodash.
-    // this.handleScroll = _.throttle(this.handleScroll.bind(this), 100);
   }
 
   componentDidMount() {
@@ -145,7 +111,11 @@ class CollapsibleAppBar extends React.PureComponent {
               className={classes.musicButton}
               onClick={toggleplayVideo}
             >
-              {playVideo ? <PauseCircleFilledIcon /> : <PlayCircleFilledIcon />}
+              {playVideo ? (
+                <PauseCircleFilledIcon className={classes.nomusicIcon} />
+              ) : (
+                <PlayCircleFilledIcon />
+              )}
             </IconButton>
           </Toolbar>
         </AppBar>

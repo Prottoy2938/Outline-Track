@@ -1,7 +1,7 @@
 import sizes from "./sizes"
 const styles = {
   container: {
-    marginTop: "50vh",
+    marginTop: "25vh",
     paddingBottom: "30vh",
     [sizes.down("md")]: {
       marginTop: "30vh",

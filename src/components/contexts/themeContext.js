@@ -1,5 +1,4 @@
 import React, { createContext, useState } from "react"
-
 export const ThemeContext = createContext()
 
 export function ThemeProvider(props) {
@@ -9,7 +8,9 @@ export function ThemeProvider(props) {
   const toggleDarkMode = () => {
     setDarkMode(!isDarkMode)
   }
-  const toggleplayVideo = () => [setplayVideo(!playVideo)]
+  const toggleplayVideo = () => {
+    setplayVideo(!playVideo)
+  }
   return (
     <ThemeContext.Provider
       value={{

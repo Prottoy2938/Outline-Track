@@ -20,11 +20,11 @@ export default [
     icon: cardIcon,
   },
   {
-    name: "React Color Picker",
+    name: "React Color Picker Page",
     icon: colorPickerIcon,
   },
   {
-    name: "Yahtzee",
+    name: "Yahtzee Page",
     icon: diceIcon,
   },
   {

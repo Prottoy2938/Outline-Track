@@ -37,7 +37,7 @@ function Portfolio(props) {
             previewLink="https://prottoy2938.github.io/react-color-picker/"
             img={colorPickerImg}
             title="Color Picker"
-            learnMoreLink="/react-color-picker/"
+            learnMoreLink="/react-color-picker-page/"
             description="A webapp which allows user to create their own color pallete and copy color code"
           />
         </Grid>
@@ -46,7 +46,7 @@ function Portfolio(props) {
             previewLink="https://prottoy2938.github.io/yahtzee/"
             img={yahtzeeImg}
             title="Yahtzee"
-            learnMoreLink="/yahtzee/"
+            learnMoreLink="/yahtzee-page/"
             description="Webapp version of Yahtzee game, has all the logic
             "
           />

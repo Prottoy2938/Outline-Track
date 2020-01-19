@@ -3,7 +3,6 @@ import { withStyles } from "@material-ui/core/styles"
 import Drawer from "@material-ui/core/Drawer"
 import Card from "@material-ui/core/Card"
 import CardContent from "@material-ui/core/CardContent"
-
 import Typography from "@material-ui/core/Typography"
 import styles from "../styles/aboutmeStyles"
 
@@ -14,7 +13,6 @@ function AboutMeDrawer(props) {
     <div
       className={classes.fullList}
       role="presentation"
-      // onClick={props.shutdown}
       onKeyDown={props.shutdown}
     >
       <Card className={classes.card}>
@@ -32,7 +30,13 @@ function AboutMeDrawer(props) {
             component="h2"
             className={classes.email}
           >
-            prottoyrudra7777@gmail.com
+            <a
+              href="mailto:prottoyrudra7777@gmail.com"
+              target="_top"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              prottoyrudra7777@gmail.com
+            </a>
           </Typography>
         </CardContent>
       </Card>

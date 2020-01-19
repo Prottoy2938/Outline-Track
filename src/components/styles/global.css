@@ -7,6 +7,7 @@ body {
   outline: none;
 }
 .project-title {
+  display: table;
   display: none;
   border-bottom: 4px solid;
   border-image: linear-gradient(to right, #a84832, #3246a8);

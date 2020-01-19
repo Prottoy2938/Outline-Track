@@ -22,7 +22,7 @@ const styles = {
   },
   title: {
     borderBottom: "3px solid black",
-    width: "fit-content",
+    display: "table",
   },
   description: {
     marginBottom: "20px",
@@ -30,7 +30,7 @@ const styles = {
   },
   email: {
     borderBottom: "1px solid blue",
-    width: "fit-content",
+    display: "table",
     "&:hover": {
       cursor: "pointer",
       backgroundColor: "#d5dedd",

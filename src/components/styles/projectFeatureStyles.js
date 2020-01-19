@@ -30,7 +30,8 @@ const styles = {
 
     borderImage: "linear-gradient(to right, #a84832, #3246a8)",
     borderImageSlice: 1,
-    width: "fit-content",
+    // width: "fit-content",
+    display: "inline-flex",
     [sizes.down("md")]: {
       display: "none",
     },

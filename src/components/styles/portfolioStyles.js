@@ -4,7 +4,8 @@ const styles = {
     marginTop: "16px",
   },
   portfolioTitle: {
-    width: "fit-content",
+    // width: "fit-content",
+    display: "inline-flex",
     borderBottom: "4px solid",
     borderImage: "linear-gradient(to right, #f5da42, #f54287)",
     borderImageSlice: "1",

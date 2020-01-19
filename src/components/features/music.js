@@ -12,8 +12,6 @@ class VideoPlayer extends Component {
 
     if (playVideo) {
       screenfull.request(findDOMNode(this.refs.player))
-    } else {
-      screenfull.exit(findDOMNode(this.refs.player))
     }
 
     return (

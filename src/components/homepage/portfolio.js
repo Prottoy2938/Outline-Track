@@ -14,6 +14,7 @@ import { ThemeContext } from "../contexts/themeContext"
 function Portfolio(props) {
   const { classes } = props
   const { isDarkMode } = useContext(ThemeContext)
+
   const portfolioTitleStyles = {
     borderBottom: isDarkMode && "4px solid",
     borderImage: isDarkMode && "linear-gradient(to right, #f5da42, #6066d8)",

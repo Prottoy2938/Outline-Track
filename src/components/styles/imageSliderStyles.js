@@ -2,8 +2,8 @@ import sizes from "./sizes"
 
 const styles = {
   galleryContainer: {
-    background: "#E0EAFC",
-    background: "-webkit-linear-gradient(to right, #CFDEF3, #E0EAFC)",
+    backgroundColor: "#E0EAFC",
+    // background: "-webkit-linear-gradient(to right, #CFDEF3, #E0EAFC)",
     background: "linear-gradient(to right, #CFDEF3, #E0EAFC)",
     position: "fixed",
     left: "0",

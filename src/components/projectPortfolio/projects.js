@@ -2,7 +2,6 @@ import React from "react"
 import ImageSlider from "./imageSlider"
 import ProjectFeatures from "./projectFeatures"
 import { ThemeProvider } from "../contexts/themeContext"
-import sizes from "../styles/sizes"
 const Projects = ({ details }) => {
   const { title, github, page, description, img, facts } = details
   return (

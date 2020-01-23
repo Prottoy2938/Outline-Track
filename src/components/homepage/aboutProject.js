@@ -4,16 +4,6 @@ import IconButton from "@material-ui/core/IconButton"
 import CloseIcon from "@material-ui/icons/Close"
 
 export default function SimpleSnackbar(props) {
-  const [open, setOpen] = React.useState(false)
-
-  const handleClose = (event, reason) => {
-    if (reason === "clickaway") {
-      return
-    }
-
-    setOpen(false)
-  }
-
   return (
     <div>
       <Snackbar
@@ -22,8 +12,7 @@ export default function SimpleSnackbar(props) {
           horizontal: "left",
         }}
         open={props.open}
-        autoHideDuration={6000}
-        onClose={handleClose}
+        autoHideDuration={2500}
         message="Project page is getting ready"
         action={
           <React.Fragment>

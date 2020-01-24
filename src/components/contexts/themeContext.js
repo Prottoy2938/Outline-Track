@@ -1,18 +1,14 @@
 import React, { createContext, useState, useEffect } from "react"
+
 export const ThemeContext = createContext()
 export function ThemeProvider(props) {
-  let checkDarkMode = () => {
-    const getDarkMode =
-      typeof window !== "undefined" && localStorage.getItem("darkMode")
-    if (getDarkMode) {
-      return getDarkMode
-    } else {
-      return false
-    }
-  }
-  const [isDarkMode, setDarkMode] = useState(checkDarkMode())
+
+  const [isDarkMode, setDarkMode] = useState(false)
   const [playVideo, setplayVideo] = useState(false)
 
+  useEffect(() => {
+    setDarkMode(JSON.parse(localStorage.getItem("darkMode")))
+  }, [])
   const toggleDarkMode = () => {
     localStorage.setItem("darkMode", !isDarkMode)
     setDarkMode(!isDarkMode)

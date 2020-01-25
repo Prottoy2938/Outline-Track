@@ -24,8 +24,8 @@ const styles = {
       fontSize: "0.77em",
     },
     [sizes.down("xs")]: {
-      marginLeft: "10%",
-      fontSize: "0.7em",
+      marginLeft: 0,
+      fontSize: "0.6em",
     },
   },
 }

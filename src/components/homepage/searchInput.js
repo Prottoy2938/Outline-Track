@@ -71,6 +71,8 @@ function FreeSolo(props) {
         id="free-solo-2-demo"
         autoComplete={true}
         disableClearable
+        // disableOpenOnFocus={true}
+
         options={ProjectList.map(option => option.name)}
         renderInput={params => (
           <TextField

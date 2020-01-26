@@ -9,6 +9,9 @@ import styles from "../styles/portfolioStyles"
 import colorPickerImg from "../../images/colorPicker/colorPicker.png"
 import yahtzeeImg from "../../images/yahtzee/yahtzee.png"
 import workingInProgress from "../../images/foodRecipe/workingInProgress.jpg"
+import todoReactImg from "../../images/todoReact/todoReact1.png"
+import lightsOutImg from "../../images/lightsOut/lightsOut (1).png"
+import weatherAppImg from "../../images/weather/weather.png"
 import { ThemeContext } from "../contexts/themeContext"
 
 function Portfolio(props) {
@@ -42,7 +45,7 @@ function Portfolio(props) {
             description="A webapp which allows user to create their own color pallete and copy color code"
           />
         </Grid>
-        <Grid item xs={12} lg={4} md={6}>
+        <Grid item xs={12} lg={4} md={6} className={classes.appForDesktop}>
           <MediaCard
             previewLink="https://prottoy2938.github.io/yahtzee/"
             img={yahtzeeImg}
@@ -50,6 +53,33 @@ function Portfolio(props) {
             learnMoreLink="/yahtzee-page/"
             description="Webapp version of Yahtzee game, has all the logic
             "
+          />
+        </Grid>
+        <Grid item xs={12} lg={4} md={6} className={classes.appForMobile}>
+          <MediaCard
+            title={"Task Manager"}
+            img={todoReactImg}
+            previewLink="https://prottoy2938.github.io/task-manager-react/"
+            learnMoreLink="/task-manager"
+            description="A Task Manager App"
+          />
+        </Grid>
+        <Grid item xs={12} lg={4} md={6} className={classes.appForMobile}>
+          <MediaCard
+            title={"Lights Out"}
+            img={lightsOutImg}
+            previewLink="https://prottoy2938.github.io/lights-out/"
+            learnMoreLink="/lights-out/"
+            description="Lights Out Game"
+          />
+        </Grid>
+        <Grid item xs={12} lg={4} md={6} className={classes.appForMobile}>
+          <MediaCard
+            title={"Weather App"}
+            img={weatherAppImg}
+            previewLink="http://sm-nodejs-weatherapp.herokuapp.com/"
+            learnMoreLink="/weather-app/"
+            description="A web application for getting weather data"
           />
         </Grid>
         <Grid item xs={12} lg={4} md={6}>

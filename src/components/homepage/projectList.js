@@ -69,10 +69,6 @@ export default [
     icon: weatherIcon,
   },
   {
-    name: "Simple todoapp with react",
-    icon: hookIcon,
-  },
-  {
     name: "Nayump",
     icon: nayumpIcon,
   },

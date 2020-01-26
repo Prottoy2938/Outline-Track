@@ -35,9 +35,16 @@ body {
 .MuiTextField-root {
   width: 80%;
 }
+
+@media screen and (max-width: 991.98px) {
+  .MuiTextField-root {
+    width: 90%;
+  }
+}
 .MuiFormControl-fullWidth {
   width: 80%;
 }
+
 /* both are same */
 
 /*to make the searchbar fullwidth without breaking the component */

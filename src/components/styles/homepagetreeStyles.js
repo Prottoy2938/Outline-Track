@@ -23,6 +23,10 @@ const styles = mode => {
       [sizes.down("sm")]: {
         width: "100vw",
       },
+      [sizes.down("xs")]: {
+        margin: "15vh auto",
+        width: "100vw",
+      },
     },
     formContainer: {
       width: "100%",
@@ -31,12 +35,11 @@ const styles = mode => {
       backgroundColor: "rgba(44, 142, 172, 0.76)",
 
       [sizes.down("md")]: {
-        clipPath: "polygon(85% 0, 100% 16%, 100% 100%, 0 100%, 0 0)",
+        clipPath:
+          "polygon(50% 0%, 100% 0, 100% 77%, 80% 100%, 0 100%, 0% 60%, 0 0)",
       },
     },
   }
 }
 
 export default styles
-
-// do media queres here

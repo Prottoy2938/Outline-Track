@@ -43,6 +43,8 @@ function FreeSolo(props) {
       <Autocomplete
         className={classes.input}
         freeSolo
+        clearOnEscape={true}
+        selectOnFocus={false}
         inputValue={value}
         onChange={(event, value) => handleSubmit(value)}
         onInputChange={handleChange}

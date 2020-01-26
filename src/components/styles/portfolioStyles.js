@@ -24,8 +24,19 @@ const styles = {
       fontSize: "0.77em",
     },
     [sizes.down("xs")]: {
-      marginLeft: 0,
+      marginLeft: "auto",
       fontSize: "0.6em",
+    },
+  },
+  appForMobile: {
+    display: "none",
+    [sizes.down("md")]: {
+      display: "block",
+    },
+  },
+  appForDesktop: {
+    [sizes.down("md")]: {
+      display: "none",
     },
   },
 }

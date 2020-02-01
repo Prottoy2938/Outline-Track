@@ -24,7 +24,7 @@ const styles = mode => {
         width: "100vw",
       },
       [sizes.down("xs")]: {
-        margin: "15vh auto",
+        margin: "35vh auto",
         width: "100vw",
       },
     },

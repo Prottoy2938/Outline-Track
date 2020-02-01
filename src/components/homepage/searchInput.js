@@ -64,6 +64,7 @@ function FreeSolo(props) {
           />
         )}
       />
+
       <Autocomplete
         className={classes.mobileInput}
         freeSolo
@@ -74,7 +75,6 @@ function FreeSolo(props) {
         autoComplete={true}
         disableClearable
         // disableOpenOnFocus={true}
-
         options={ProjectList.map(option => option.name)}
         renderInput={params => (
           <TextField
@@ -94,6 +94,7 @@ function FreeSolo(props) {
           />
         )}
       />
+
       <button
         className={classes.button}
         style={buttonColor}

@@ -74,7 +74,7 @@ function AboutMeDrawer(props) {
               className={classes.linkedin}
             >
               <a
-                href="https://www.linkedin.com/in/prottoy-rudra-4b941b177/"
+                href="https://www.linkedin.com/in/prottay-rudra/"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ textDecoration: "none", color: "black" }}

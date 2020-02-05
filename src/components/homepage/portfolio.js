@@ -8,12 +8,11 @@ import Box from "@material-ui/core/Box"
 import styles from "../styles/portfolioStyles"
 import colorPickerImg from "../../images/colorPicker/colorPicker.png"
 import yahtzeeImg from "../../images/yahtzee/yahtzee.png"
-import workingInProgress from "../../images/foodRecipe/workingInProgress.jpg"
 import todoReactImg from "../../images/todoReact/todoReact1.png"
 import lightsOutImg from "../../images/lightsOut/lightsOut (1).png"
 import weatherAppImg from "../../images/weather/weather.png"
 import { ThemeContext } from "../contexts/themeContext"
-
+import ingredientImg from "../../images/ingredient/ingredient.png"
 function Portfolio(props) {
   const { classes } = props
   const { isDarkMode } = useContext(ThemeContext)
@@ -55,6 +54,7 @@ function Portfolio(props) {
             "
           />
         </Grid>
+
         <Grid item xs={12} lg={4} md={6} className={classes.appForMobile}>
           <MediaCard
             title={"Task Manager"}
@@ -84,10 +84,10 @@ function Portfolio(props) {
         </Grid>
         <Grid item xs={12} lg={4} md={6}>
           <MediaCard
-            title={"Food Recipe"}
-            img={workingInProgress}
-            previewLink={null}
-            learnMoreLink="/food-recipe/"
+            title={"Ingredient"}
+            img={ingredientImg}
+            previewLink="https://ingredient-d4129.firebaseapp.com/"
+            learnMoreLink="/ingredient-page/"
             description="A web application based on getting recipe for cooking foods"
           />
         </Grid>

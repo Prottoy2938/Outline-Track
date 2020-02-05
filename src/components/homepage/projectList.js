@@ -72,4 +72,8 @@ export default [
     name: "Nayump Page",
     icon: nayumpIcon,
   },
+  {
+    name: "Ingredient Page",
+    icon: nayumpIcon,
+  },
 ]

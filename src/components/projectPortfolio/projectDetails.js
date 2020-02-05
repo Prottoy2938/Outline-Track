@@ -43,8 +43,9 @@ import lightsOut2Img from "../../images/lightsOut/lightsOut (3).png"
 import taskManagerImg from "../../images/todoReact/todoReact.png"
 import taskManager1Img from "../../images/todoReact/todoReact1.png"
 import taskManager2Img from "../../images/todoReact/todoReact2.png"
-import foodRecipeImg from "../../images/foodRecipe/foodRecipe.png"
-import workingInProgress from "../../images/foodRecipe/workingInProgress.jpg"
+import ingredientImg from "../../images/ingredient/ingredient.png"
+import ingredient1Img from "../../images/ingredient/ingredient1.png"
+import ingredient2Img from "../../images/ingredient/ingredient2.png"
 
 const reactColorPicker = {
   title: "React Color Picker",
@@ -227,13 +228,19 @@ const taskManager = {
   description: "Task Manger Webapp made with React",
   facts: ["Uses Reactjs Framework", "Has good css"],
 }
-const foodRecipe = {
-  title: "Food Recipe",
+const ingredient = {
+  title: "Ingredient",
   description: "A web application based on getting recipe for cooking foods",
-  facts: ["Working in Progress"],
-  img: [foodRecipeImg, workingInProgress],
+  facts: [
+    "Version 1 just publised",
+    "Has quite a few bugs on the deployed version",
+    "Now working on the fix those bugs",
+    "Created using create-react-app",
+    "Next version will be on nextJS",
+  ],
+  img: [ingredientImg, ingredient1Img, ingredient2Img],
   github: null,
-  page: null,
+  page: "https://ingredient-d4129.firebaseapp.com/",
 }
 
 export {
@@ -251,5 +258,5 @@ export {
   reactSignInPage,
   lightsOut,
   taskManager,
-  foodRecipe,
+  ingredient,
 }

@@ -16,7 +16,7 @@ import nayumpIcon from "../../images/icons/flower.png"
 
 export default [
   {
-    name: "Card Dealer",
+    name: "Card Dealer Page",
     icon: cardIcon,
   },
   {
@@ -28,24 +28,24 @@ export default [
     icon: diceIcon,
   },
   {
-    name: "Dog Portfolio",
+    name: "Dog Portfolio Page",
     icon: dogIcon,
   },
   {
-    name: "Hangman",
+    name: "Hangman Page",
     icon: hangIcon,
   },
   {
-    name: "Dad Jokes",
+    name: "Dad Jokes Page",
     icon: jokesIcon,
   },
   {
-    name: "Lights Out",
+    name: "Lights Out Page",
     icon: lightsIcon,
   },
 
   {
-    name: "Pokemon",
+    name: "Pokemon Page",
     icon: pokemonIcon,
   },
   {
@@ -53,7 +53,7 @@ export default [
     icon: signInIcon,
   },
   {
-    name: "Task Manager",
+    name: "Task Manager Page",
     icon: todoIcon,
   },
   {
@@ -61,15 +61,15 @@ export default [
     icon: todoListIcon,
   },
   {
-    name: "Vending Machine",
+    name: "Vending Machine Page",
     icon: vendingMachingIcon,
   },
   {
-    name: "Weather App",
+    name: "Weather App Page",
     icon: weatherIcon,
   },
   {
-    name: "Nayump",
+    name: "Nayump Page",
     icon: nayumpIcon,
   },
 ]

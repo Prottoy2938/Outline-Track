@@ -1,5 +1,5 @@
 import React from "react"
-import SEO from "../components/seo"
+import SEO from "../components/common/seo"
 import HomepageTree from "../components/homepage/homepagetree"
 import Portfolio from "../components/homepage/portfolio"
 import BottomSide from "../components/homepage/bottomSide"

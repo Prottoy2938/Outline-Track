@@ -37,6 +37,15 @@ function Portfolio(props) {
       <Grid container spacing={6}>
         <Grid item xs={12} lg={4} md={6}>
           <MediaCard
+            title={"Ingredient"}
+            img={ingredientImg}
+            previewLink="https://ingredient-d4129.firebaseapp.com/"
+            learnMoreLink="/ingredient-page/"
+            description="A web application based on getting recipe for cooking foods"
+          />
+        </Grid>
+        <Grid item xs={12} lg={4} md={6}>
+          <MediaCard
             previewLink="https://prottoy2938.github.io/react-color-picker/"
             img={colorPickerImg}
             title="Color Picker"
@@ -80,15 +89,6 @@ function Portfolio(props) {
             previewLink="http://sm-nodejs-weatherapp.herokuapp.com/"
             learnMoreLink="/weather-app/"
             description="A web application for getting weather data"
-          />
-        </Grid>
-        <Grid item xs={12} lg={4} md={6}>
-          <MediaCard
-            title={"Ingredient"}
-            img={ingredientImg}
-            previewLink="https://ingredient-d4129.firebaseapp.com/"
-            learnMoreLink="/ingredient-page/"
-            description="A web application based on getting recipe for cooking foods"
           />
         </Grid>
       </Grid>

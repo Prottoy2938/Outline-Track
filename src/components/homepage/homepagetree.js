@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import AutoTyping from "../AutoTyping"
+import AutoTyping from "../common/AutoTyping"
 import SearchInput from "./searchInput"
 import { withStyles } from "@material-ui/core/styles"
 import styles from "../styles/homepagetreeStyles"

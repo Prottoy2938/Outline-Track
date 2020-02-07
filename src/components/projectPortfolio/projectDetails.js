@@ -62,6 +62,7 @@ const reactColorPicker = {
     "Saves Palette to localstorage",
     "Responsive to all screen size",
     "And many small features",
+    "Thanks to Colt Steele for Helping me Create this",
   ],
 }
 
@@ -76,6 +77,7 @@ const dogPortfolio = {
     "Each Dog has their own page",
     "Kinda like Tinde/Facebook for dogs",
     "Website is still working in progress",
+    "Thanks to Colt Steele for Helping me Create this",
   ],
 }
 const weatherApp = {
@@ -89,6 +91,7 @@ const weatherApp = {
     "Uses hbs for its dynamic content",
     "Has good error handle condition",
     "The webpage is a minimalist, only shows the bare minimum contents",
+    "Thanks to Andrew Mead for Helping me Create this",
   ],
 }
 const cardDealer = {
@@ -102,6 +105,7 @@ const cardDealer = {
     "Single page webapp",
     "Gets card image an api",
     "Build with a react bootcamp course",
+    "Thanks to Colt Steele for Helping me Create this",
   ],
 }
 const dadJokes = {
@@ -115,6 +119,7 @@ const dadJokes = {
     "Can generate unlimited (still limited) dadjokes",
     "Doesn't have good css, but laughable",
     "User can upvote or downvote jokes",
+    "Thanks to Colt Steele for Helping me Create this",
   ],
 }
 const hangMan = {
@@ -123,7 +128,11 @@ const hangMan = {
   page: "https://prottoy2938.github.io/hangman/",
   img: [hangmanImg, hangman1Img, hangman2Img],
   description: "A webapp version of Hangman game",
-  facts: ["Made with Reactjs framework", "Has all the logic of a Hangman Game"],
+  facts: [
+    "Made with Reactjs framework",
+    "Has all the logic of a Hangman Game",
+    "Thanks to Colt Steele for Helping me Create this",
+  ],
 }
 const pokemon = {
   title: "Pokemon",
@@ -136,6 +145,7 @@ const pokemon = {
     "Shows new pokemon on each refresh",
     "Shows type and experience of each pokemon",
     "Has a winning side and a Losing side",
+    "Thanks to Colt Steele for Helping me Create this",
   ],
 }
 const yahtzee = {
@@ -149,6 +159,7 @@ const yahtzee = {
     "Has all the logics of a Yahtzee game",
     "Doesn't have a single bug, no one can cheat",
     "Only for desktop, not responsive yet",
+    "Thanks to Colt Steele for Helping me Create this",
   ],
 }
 const vendingMachine = {
@@ -167,6 +178,7 @@ const vendingMachine = {
     "Has starter code for understanding React Router, Layout",
     "User can get virtual soda, sardines and  lots of chips",
     "Made with a React Bootcamp Course",
+    "Thanks to Colt Steele for Helping me Create this",
   ],
 }
 
@@ -191,6 +203,7 @@ const simpleTodoApp_withReactHooks = {
     "Uses Reactjs Framework",
     "Has starter code for understanding react hooks",
     "Doesn't have good css",
+    "Thanks to Colt Steele for Helping me Create this",
   ],
 }
 const reactSignInPage = {
@@ -204,6 +217,7 @@ const reactSignInPage = {
     "Has 3 language option",
     "Has dark mode",
     "Uses context api",
+    "Thanks to Colt Steele for Helping me Create this",
   ],
 }
 const lightsOut = {
@@ -216,7 +230,8 @@ const lightsOut = {
     "Single Page webapp",
     "Uses Reactjs Framework",
     "Has all the logic of a lights out game",
-    "Made with a React Bootcamp Course",
+
+    "Thanks to Colt Steele for Helping me Create this",
   ],
 }
 
@@ -226,7 +241,11 @@ const taskManager = {
   page: "https://prottoy2938.github.io/task-manager-react/",
   img: [taskManagerImg, taskManager1Img, taskManager2Img],
   description: "Task Manger Webapp made with React",
-  facts: ["Uses Reactjs Framework", "Has good css"],
+  facts: [
+    "Uses Reactjs Framework",
+    "Has good css",
+    "Thanks to Colt Steele for Helping me Create this",
+  ],
 }
 const ingredient = {
   title: "Ingredient",
@@ -237,7 +256,7 @@ const ingredient = {
     "Working on the add more features",
   ],
   img: [ingredientImg, ingredient1Img, ingredient2Img],
-  github: null,
+  github: "https://github.com/Prottoy2938/ingredient-code",
   page: "https://ingredient-d4129.firebaseapp.com/",
 }
 

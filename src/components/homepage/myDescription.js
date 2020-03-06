@@ -1,9 +1,35 @@
-import React from "react"
+import React, { useState, useContext } from "react"
 import Paper from "@material-ui/core/Paper"
-import styles from "../styles/myDescriptionStyles"
 import { withStyles } from "@material-ui/core/styles"
+import AboutMe from "./aboutme"
+import styles from "../styles/myDescriptionStyles"
+
+import { ThemeContext } from "../contexts/themeContext"
 
 const MyDescription = ({ classes }) => {
+  const { isDarkMode } = useContext(ThemeContext)
+  const [open, setOpen] = useState(false)
+  const [aboutMeOpen, setaboutMeOpen] = useState(false)
+  const [aboutProjectOpen, setaboutProjectOpen] = useState(false)
+
+  const handleAbout_Me_Click = () => {
+    setaboutMeOpen(!aboutMeOpen)
+  }
+
+  const shutDown_AboutMe = () => {
+    setaboutMeOpen(false)
+  }
+  const handleAbout_Project_Click = () => {
+    setaboutProjectOpen(true)
+  }
+
+  const shutDown_Project = reason => {
+    if (reason === "clickaway") {
+      return
+    }
+
+    setaboutProjectOpen(false)
+  }
   return (
     <Paper className={classes.myDscContainer}>
       <p>
@@ -12,7 +38,11 @@ const MyDescription = ({ classes }) => {
       </p>
 
       <p>
-        Learn more <span className={classes.aboutMe}>about me</span>, read my{" "}
+        Learn more{" "}
+        <span className={classes.aboutMe} onClick={handleAbout_Me_Click}>
+          about me
+        </span>
+        , read my{" "}
         <span className={classes.myResume}>
           <a
             href="http://bit.ly/3cxwITP"
@@ -29,6 +59,7 @@ const MyDescription = ({ classes }) => {
           </a>
         </span>
       </p>
+      <AboutMe open={aboutMeOpen} shutdown={shutDown_AboutMe} />
     </Paper>
   )
 }

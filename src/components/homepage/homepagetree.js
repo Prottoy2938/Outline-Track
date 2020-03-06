@@ -23,7 +23,8 @@ const HomepageTree = props => {
         <form className={classes.form} onSubmit={handleSubmit}>
           <AutoTyping
             strings={[
-              "<span>Search for webapps</span>",
+              "<span>Here are some small web apps that I had created</span>",
+              "<span>Search for web apps</span>",
               "<span>like: <span style='border-bottom: 2px solid #000000'>Lightsout Game</span></span>",
               "<span>like: <span style='border-bottom: 2px solid #004ade'>Weather App</span></span>",
               "<span>like: <span  style='border-bottom: 2px solid #6b492f'>Pokemon Game</></span>",

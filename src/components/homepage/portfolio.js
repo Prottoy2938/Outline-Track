@@ -31,7 +31,7 @@ function Portfolio(props) {
           className={classes.portfolioTitle}
           style={portfolioTitleStyles}
         >
-          Projects that took time to build
+          Some of my projects
         </Box>
       </Typography>
       <Grid container spacing={6}>

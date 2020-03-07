@@ -24,6 +24,7 @@ body {
 }
 .MuiAutocomplete-root {
   display: inline;
+  /* overflow: hidden; */
 }
 .FreeSolo-input-462 {
   display: inline;
@@ -63,4 +64,7 @@ body {
 
 div .MuiTypography-body1 {
   margin-left: 20px;
+}
+.MuiGrid-grid-xs-12 {
+  margin-left: 25%;
 }

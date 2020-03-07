@@ -2,9 +2,17 @@ import sizes from "./sizes"
 const styles = {
   MdContainer: {
     marginTop: "16px",
+    marginBottom: "30vh",
+    [sizes.down("md")]: {
+      marginBottom: "15vh",
+    },
+  },
+  projectHeader: {
+    [sizes.down("md")]: {
+      textAlign: "center",
+    },
   },
   portfolioTitle: {
-    // width: "fit-content",
     display: "inline-flex",
     borderBottom: "4px solid",
     borderImage: "linear-gradient(to right, #f5da42, #f54287)",
@@ -16,11 +24,8 @@ const styles = {
     [sizes.down("lg")]: {
       marginLeft: "5%",
     },
-    [sizes.down("md")]: {
-      marginLeft: "20%",
-    },
     [sizes.down("sm")]: {
-      marginLeft: "20%",
+      marginLeft: "0",
       fontSize: "0.77em",
     },
     [sizes.down("xs")]: {

@@ -8,31 +8,18 @@ import { ThemeContext } from "../contexts/themeContext"
 
 const MyDescription = ({ classes }) => {
   const { isDarkMode } = useContext(ThemeContext)
-  const [open, setOpen] = useState(false)
   const [aboutMeOpen, setaboutMeOpen] = useState(false)
-  const [aboutProjectOpen, setaboutProjectOpen] = useState(false)
 
   const handleAbout_Me_Click = () => {
     setaboutMeOpen(!aboutMeOpen)
   }
-
   const shutDown_AboutMe = () => {
     setaboutMeOpen(false)
   }
-  const handleAbout_Project_Click = () => {
-    setaboutProjectOpen(true)
-  }
 
-  const shutDown_Project = reason => {
-    if (reason === "clickaway") {
-      return
-    }
-
-    setaboutProjectOpen(false)
-  }
   return (
     <Paper className={classes.myDscContainer}>
-      <p>
+      <p className={classes.description}>
         Hi! I am Prottay Rudra. I enjoy doing Programming. Right now I am
         focusing on Web Development.
       </p>

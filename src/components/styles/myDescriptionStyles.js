@@ -6,6 +6,15 @@ export default {
     width: "80vw",
     margin: "0 auto",
     paddingBottom: "5vh",
+    height: "50vh",
+  },
+  description: {
+    fontSize: "2.5em",
+    lineHeight: "normal",
+
+    [sizes.down("md")]: {
+      fontSize: "2em",
+    },
   },
   aboutMe: {
     borderBottom: "2px solid black",

@@ -43,8 +43,8 @@ function FreeSolo(props) {
       <Autocomplete
         className={classes.input}
         freeSolo
-        clearOnEscape={true}
-        selectOnFocus={false}
+        // clearOnEscape={true}
+        // selectOnFocus={false}
         inputValue={value}
         onChange={(event, value) => handleSubmit(value)}
         onInputChange={handleChange}
@@ -56,6 +56,8 @@ function FreeSolo(props) {
           <TextField
             {...params}
             label="Find..."
+            menuStyle={{ maxHeight: "30vh" }}
+            // maxHeight={{30}}
             variant="standard"
             InputProps={{
               ...params.InputProps,

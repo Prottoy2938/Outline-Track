@@ -24,18 +24,22 @@ function Portfolio(props) {
   }
   return (
     <Container className={classes.MdContainer}>
-      <Typography component="div" variant="h4">
+      <Typography
+        component="div"
+        variant="h4"
+        className={classes.projectHeader}
+      >
         <Box
           textAlign="justify"
           m={1}
           className={classes.portfolioTitle}
           style={portfolioTitleStyles}
         >
-          Some of my projects
+          Some of My Project
         </Box>
       </Typography>
       <Grid container spacing={6}>
-        <Grid item xs={12} lg={4} md={6}>
+        <Grid item xs={12} lg={4} md={6} sm={6}>
           <MediaCard
             title={"Ingredient"}
             img={ingredientImg}
@@ -44,7 +48,7 @@ function Portfolio(props) {
             description="A web application based on getting recipe for cooking foods"
           />
         </Grid>
-        <Grid item xs={12} lg={4} md={6}>
+        <Grid item xs={12} lg={4} md={6} sm={6}>
           <MediaCard
             previewLink="https://prottoy2938.github.io/react-color-picker/"
             img={colorPickerImg}
@@ -53,7 +57,14 @@ function Portfolio(props) {
             description="A webapp which allows user to create their own color pallete and copy color code"
           />
         </Grid>
-        <Grid item xs={12} lg={4} md={6} className={classes.appForDesktop}>
+        <Grid
+          item
+          xs={12}
+          lg={4}
+          md={6}
+          className={classes.appForDesktop}
+          sm={6}
+        >
           <MediaCard
             previewLink="https://prottoy2938.github.io/yahtzee/"
             img={yahtzeeImg}
@@ -64,7 +75,14 @@ function Portfolio(props) {
           />
         </Grid>
 
-        <Grid item xs={12} lg={4} md={6} className={classes.appForMobile}>
+        <Grid
+          item
+          xs={12}
+          lg={4}
+          md={6}
+          className={classes.appForMobile}
+          sm={6}
+        >
           <MediaCard
             title={"Task Manager"}
             img={todoReactImg}
@@ -73,7 +91,14 @@ function Portfolio(props) {
             description="A Task Manager App"
           />
         </Grid>
-        <Grid item xs={12} lg={4} md={6} className={classes.appForMobile}>
+        <Grid
+          item
+          xs={12}
+          lg={4}
+          md={6}
+          className={classes.appForMobile}
+          sm={6}
+        >
           <MediaCard
             title={"Lights Out"}
             img={lightsOutImg}
@@ -82,7 +107,14 @@ function Portfolio(props) {
             description="Lights Out Game"
           />
         </Grid>
-        <Grid item xs={12} lg={4} md={6} className={classes.appForMobile}>
+        <Grid
+          item
+          xs={12}
+          lg={4}
+          md={6}
+          className={classes.appForMobile}
+          sm={6}
+        >
           <MediaCard
             title={"Weather App"}
             img={weatherAppImg}

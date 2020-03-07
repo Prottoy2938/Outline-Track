@@ -16,7 +16,7 @@ const IndexPage = () => {
         <HomepageTree />
         <MyDescription />
         <Portfolio />
-        <BottomSide />
+        {/* <BottomSide /> delete bottomSide.js component */}
       </ThemeProvider>
     </div>
   )

@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect } from "react"
 
 export const ThemeContext = createContext()
 export function ThemeProvider(props) {
-  const [isDarkMode, setDarkMode] = useState(false)
+  const [isDarkMode, setDarkMode] = useState(true)
 
   useEffect(() => {
     setDarkMode(JSON.parse(localStorage.getItem("darkMode")))

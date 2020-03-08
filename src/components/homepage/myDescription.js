@@ -20,12 +20,8 @@ const MyDescription = ({ classes }) => {
   return (
     <Paper className={classes.myDscContainer}>
       <p className={classes.description}>
-        Hi! I am Prottay Rudra. I enjoy doing Programming. Right now I am
-        focusing on Web Development.
-      </p>
-
-      <p>
-        Learn more{" "}
+        I am Prottay. I started doing Programming because I wanted to create.
+        And here I am. Learn more{" "}
         <span className={classes.aboutMe} onClick={handleAbout_Me_Click}>
           about me
         </span>

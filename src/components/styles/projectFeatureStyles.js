@@ -82,7 +82,6 @@ const styles = {
     left: "0",
     marginTop: "13vh",
     border: "2px solid #03a1fc",
-    borderRadius: "20px",
     backgroundColor: "white",
     width: "10vw",
     [sizes.down("lg")]: {

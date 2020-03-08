@@ -1,17 +1,23 @@
 import sizes from "./sizes"
 export default {
   myDscContainer: {
-    marginTop: "17vh",
-    marginBottom: "10vh",
+    marginTop: "12vh",
+    marginBottom: "15vh",
     width: "80vw",
     margin: "0 auto",
     paddingBottom: "5vh",
     height: "50vh",
+    "&:hover": {
+      WebkitBoxShadow: "-1px 6px 10px -2px rgba(0,0,0,0.32)",
+      MozBoxShadow: "-1px 6px 10px -2px rgba(0,0,0,0.32)",
+      boxShadow: "-1px 6px 10px -2px rgba(0,0,0,0.32)",
+    },
+    padding: "50px",
   },
   description: {
-    fontSize: "2.5em",
-    lineHeight: "normal",
-
+    fontSize: "2em",
+    lineHeight: "50px",
+    marginTop: "5vh",
     [sizes.down("md")]: {
       fontSize: "2em",
     },
@@ -22,7 +28,7 @@ export default {
     cursor: "pointer",
     "&:hover": {
       paddingBottom: "1px",
-      borderBottom: "4px solid black",
+      borderBottom: "10px solid black",
     },
   },
   myResume: {
@@ -32,7 +38,7 @@ export default {
     cursor: "pointer",
     "&:hover": {
       paddingBottom: "1px",
-      borderBottom: "4px solid #fcba03",
+      borderBottom: "10px solid #fcba03",
     },
     "& a": {
       textDecoration: "none",
@@ -45,7 +51,7 @@ export default {
     cursor: "pointer",
     "&:hover": {
       paddingBottom: "1px",
-      borderBottom: "4px solid #027de8",
+      borderBottom: "10px solid #027de8",
     },
     "& a": {
       textDecoration: "none",

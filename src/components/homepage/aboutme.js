@@ -1,13 +1,13 @@
 import React from "react"
-import { withStyles } from "@material-ui/core/styles"
 import Drawer from "@material-ui/core/Drawer"
-import styles from "../styles/aboutmeStyles"
 import myImg from "../../images/my image -b.jpg"
 import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import GitHubIcon from "@material-ui/icons/GitHub"
 import Button from "@material-ui/core/Button"
 import CancelPresentationIcon from "@material-ui/icons/CancelPresentation"
 import IconButton from "@material-ui/core/IconButton"
+import { withStyles } from "@material-ui/core/styles"
+import styles from "../styles/aboutmeStyles"
 
 const AboutMeDrawer = ({ classes, shutdown, open }) => {
   const fullList = () => (
@@ -17,10 +17,10 @@ const AboutMeDrawer = ({ classes, shutdown, open }) => {
 
       <p className={classes.description}>
         Hi! I am Prottay Rudra. I started doing programming because I wanted to
-        spend my time on something that will have an impact on everyone. Right
-        now I am spending most of my time on JavaScript and web development
-        frameworks. Besides programming, I have also interest in artificial
-        intelligence and outer space.
+        spend my time on something that I wanted to do. Right now I am spending
+        most of my time on JavaScript and web development frameworks. Besides
+        programming, I have interest in working on artificial intelligence and
+        outer space.
       </p>
       <div className={classes.linkContainer}>
         <a

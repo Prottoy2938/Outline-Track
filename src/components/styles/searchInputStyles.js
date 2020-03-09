@@ -78,7 +78,7 @@ export default {
     width: "20px",
     height: "20px",
     marginBottom: "0",
-    // position: "relative",
+    position: "relative",
     margin: "0",
 
     marginLeft: "5px",

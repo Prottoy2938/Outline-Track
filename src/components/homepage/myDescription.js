@@ -1,39 +1,25 @@
-import React, { useState, useContext } from "react"
+import React, { useState } from "react"
 import Paper from "@material-ui/core/Paper"
 import { withStyles } from "@material-ui/core/styles"
 import AboutMe from "./aboutme"
 import styles from "../styles/myDescriptionStyles"
 
-import { ThemeContext } from "../contexts/themeContext"
-
 const MyDescription = ({ classes }) => {
-  const { isDarkMode } = useContext(ThemeContext)
-  const [aboutMeOpen, setaboutMeOpen] = useState(false)
-
+  const [aboutMeOpen, setAboutMeOpen] = useState(false)
   const handleAbout_Me_Click = () => {
-    setaboutMeOpen(!aboutMeOpen)
+    setAboutMeOpen(!aboutMeOpen)
   }
   const shutDown_AboutMe = () => {
-    setaboutMeOpen(false)
+    setAboutMeOpen(false)
   }
 
   return (
     <Paper className={classes.myDscContainer}>
       <p className={classes.description}>
         Hi! I am Prottay. I started doing Programming because I wanted to
-        create. And here I am. More{" "}
+        create. And here I am. Learn more{" "}
         <span className={classes.aboutMe} onClick={handleAbout_Me_Click}>
           about me
-        </span>
-        , read my{" "}
-        <span className={classes.myResume}>
-          <a
-            href="http://bit.ly/3cxwITP"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            resume
-          </a>
         </span>{" "}
         or send me an{" "}
         <span className={classes.myEmail}>

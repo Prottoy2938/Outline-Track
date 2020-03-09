@@ -12,22 +12,22 @@ import { ThemeContext } from "../contexts/themeContext"
 function FreeSolo(props) {
   const { isDarkMode } = useContext(ThemeContext)
   const [value, setvalue] = useState("")
-  const [url, seturl] = useState("")
+  const [url, setUrl] = useState("")
   const { classes } = props
 
   const handleChange = e => {
     const input = e.target.value
     setvalue(input)
-    const anlowerValue = input.toString().toLowerCase()
-    const pageURL1 = anlowerValue.replace(/\s/g, "-")
-    seturl(pageURL1)
+    const lowerInput = input.toString().toLowerCase()
+    const pageURL1 = lowerInput.replace(/\s/g, "-")
+    setUrl(pageURL1)
   }
 
   const handleSubmit = e => {
     setvalue(e)
     const lowerCaseValue = e.toString().toLowerCase()
     const pageURL = lowerCaseValue.replace(/\s/g, "-")
-    seturl(pageURL)
+    setUrl(pageURL)
     navigate(`/${pageURL}`)
   }
   const handleIconClick = () => {
@@ -43,8 +43,8 @@ function FreeSolo(props) {
       <Autocomplete
         className={classes.input}
         freeSolo
-        // clearOnEscape={true}
-        // selectOnFocus={false}
+        clearOnEscape={true}
+        selectOnFocus={false}
         inputValue={value}
         onChange={(event, value) => handleSubmit(value)}
         onInputChange={handleChange}
@@ -56,8 +56,6 @@ function FreeSolo(props) {
           <TextField
             {...params}
             label="Find..."
-            menuStyle={{ maxHeight: "30vh" }}
-            // maxHeight={{30}}
             variant="standard"
             InputProps={{
               ...params.InputProps,
@@ -76,7 +74,6 @@ function FreeSolo(props) {
         id="free-solo-2-demo"
         autoComplete={true}
         disableClearable
-        // disableOpenOnFocus={true}
         options={ProjectList.map(option => option.name)}
         renderInput={params => (
           <TextField

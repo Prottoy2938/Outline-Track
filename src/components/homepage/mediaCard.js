@@ -8,10 +8,18 @@ import CardMedia from "@material-ui/core/CardMedia"
 import Button from "@material-ui/core/Button"
 import Typography from "@material-ui/core/Typography"
 import { ThemeContext } from "../contexts/themeContext"
+import Tooltip from "@material-ui/core/Tooltip"
 import styles from "../styles/mediaCardStyles"
 
-function MediaCard(props) {
-  const { classes } = props
+function MediaCard({
+  classes,
+  toolTip,
+  previewLink,
+  learnMoreLink,
+  title,
+  description,
+  img,
+}) {
   const { isDarkMode } = useContext(ThemeContext)
   const previewButtonStyle = {
     backgroundColor: isDarkMode && "#b9c7de",
@@ -30,43 +38,45 @@ function MediaCard(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={props.img}
+          image={img}
           title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            {props.title}
+            {title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            {props.description}
+            {description}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions style={{ justifyContent: "space-between" }}>
-        <Button
-          size="small"
-          variant="contained"
-          style={previewButtonStyle}
-          className={classes.previewButton}
-        >
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={props.previewLink || null}
-            style={{
-              textDecoration: "none",
-              color: isDarkMode ? "black" : "#104e52",
-            }}
+        <Tooltip title={toolTip || ""} aria-label={toolTip || ""}>
+          <Button
+            size="small"
+            variant="contained"
+            style={previewButtonStyle}
+            className={classes.previewButton}
           >
-            Preview
-          </a>
-        </Button>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={previewLink || null}
+              style={{
+                textDecoration: "none",
+                color: isDarkMode ? "black" : "#104e52",
+              }}
+            >
+              Preview
+            </a>
+          </Button>
+        </Tooltip>
         <Button
           size="small"
           color="primary"
           className={classes.learnMorebtn}
           style={learnMorebtnStyle}
-          href={props.learnMoreLink || null}
+          href={learnMoreLink || null}
         >
           Learn More
         </Button>

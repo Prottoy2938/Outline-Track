@@ -6,6 +6,8 @@ import myImg from "../../images/my image -b.jpg"
 import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import GitHubIcon from "@material-ui/icons/GitHub"
 import Button from "@material-ui/core/Button"
+import CancelPresentationIcon from "@material-ui/icons/CancelPresentation"
+import IconButton from "@material-ui/core/IconButton"
 
 const AboutMeDrawer = ({ classes, shutdown, open }) => {
   const fullList = () => (
@@ -57,6 +59,13 @@ const AboutMeDrawer = ({ classes, shutdown, open }) => {
       <button className={classes.closeButton} onClick={shutdown}>
         way out
       </button>
+      <IconButton
+        aria-label="way out"
+        className={classes.closeIcon}
+        onClick={shutdown}
+      >
+        <CancelPresentationIcon />
+      </IconButton>
     </div>
   )
 

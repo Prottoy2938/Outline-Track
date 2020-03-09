@@ -20,8 +20,8 @@ const MyDescription = ({ classes }) => {
   return (
     <Paper className={classes.myDscContainer}>
       <p className={classes.description}>
-        I am Prottay. I started doing Programming because I wanted to create.
-        And here I am. Learn more{" "}
+        Hi! I am Prottay. I started doing Programming because I wanted to
+        create. And here I am. More{" "}
         <span className={classes.aboutMe} onClick={handleAbout_Me_Click}>
           about me
         </span>
@@ -38,7 +38,7 @@ const MyDescription = ({ classes }) => {
         or send me an{" "}
         <span className={classes.myEmail}>
           <a href="mailto:prottoyrudra7777@gmail.com" target="_top">
-            email
+            Email
           </a>
         </span>
       </p>

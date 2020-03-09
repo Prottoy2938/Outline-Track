@@ -50,6 +50,7 @@ function Portfolio(props) {
         </Grid>
         <Grid item xs={12} lg={4} md={6} sm={6}>
           <MediaCard
+            toolTip="There seems to be a bug on styling in the production field for this application, I am working on it."
             previewLink="https://prottoy2938.github.io/react-color-picker/"
             img={colorPickerImg}
             title="Color Picker"

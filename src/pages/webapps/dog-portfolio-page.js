@@ -1,6 +1,6 @@
 import React from "react"
-import Projects from "../../components/projectPortfolio/projects"
-import { dogPortfolio } from "../../components/projectPortfolio/projectDetails"
+import Projects from "../../components/project-page/projects"
+import { dogPortfolio } from "../../components/project-page/projectDetails"
 
 const DogPortfolio = props => {
   return <Projects details={dogPortfolio} />

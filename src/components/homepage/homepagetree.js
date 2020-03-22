@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import AutoTyping from "../common/AutoTyping"
+import AutoTyping from "../features/AutoTyping"
 import SearchInput from "./searchInput"
 import { withStyles } from "@material-ui/core/styles"
 import styles from "../styles/homepagetreeStyles"
@@ -24,7 +24,6 @@ const HomepageTree = props => {
           <AutoTyping
             strings={[
               "<span>Here are some small web apps that I had created</span>",
-              "<span>Search for web apps</span>",
               "<span>like: <span style='border-bottom: 2px solid #000000'>Lightsout Game</span></span>",
               "<span>like: <span style='border-bottom: 2px solid #004ade'>Weather App</span></span>",
               "<span>like: <span  style='border-bottom: 2px solid #6b492f'>Pokemon Game</></span>",

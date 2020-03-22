@@ -1,6 +1,6 @@
 import React from "react"
-import Projects from "../../components/projectPortfolio/projects"
-import { hangMan } from "../../components/projectPortfolio/projectDetails"
+import Projects from "../../components/project-page/projects"
+import { hangMan } from "../../components/project-page/projectDetails"
 
 const Hangman = props => {
   return <Projects details={hangMan} />

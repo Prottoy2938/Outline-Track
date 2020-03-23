@@ -2,6 +2,8 @@ import React from "react"
 import ImageSlider from "./imageSlider"
 import ProjectFeatures from "./projectFeatures"
 import { ThemeProvider } from "../contexts/themeContext"
+import PropTypes from "prop-types"
+
 const Projects = ({ details }) => {
   const { title, github, page, description, img, facts } = details
   return (
@@ -18,4 +20,9 @@ const Projects = ({ details }) => {
     </ThemeProvider>
   )
 }
+
+Projects.propTypes = {
+  details: PropTypes.object,
+}
+
 export default Projects

@@ -2,6 +2,7 @@ import React from "react"
 import sizes from "../../styles/sizes"
 import { motion } from "framer-motion"
 import { withStyles } from "@material-ui/core/styles"
+import PropTypes from "prop-types"
 
 const styles = {
   container: {
@@ -34,4 +35,10 @@ const Example = ({ isDarkMode, classes }) => {
     />
   )
 }
+
+Example.propTypes = {
+  isDarkMode: PropTypes.bool,
+  classes: PropTypes.object.isRequired,
+}
+
 export default withStyles(styles)(Example)

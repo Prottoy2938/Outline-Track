@@ -11,6 +11,8 @@ import FormControlLabel from "@material-ui/core/FormControlLabel"
 import { withStyles } from "@material-ui/core/styles"
 import styles from "../../styles/projectFeatureStyles"
 import IconButton from "@material-ui/core/IconButton"
+import PropTypes from "prop-types"
+
 const ProjectFeature = props => {
   const { classes, github, description, page, title, facts } = props
   return (
@@ -65,6 +67,15 @@ const ProjectFeature = props => {
       </div>
     </div>
   )
+}
+
+ProjectFeature.propTypes = {
+  classes: PropTypes.object.isRequired,
+  github: PropTypes.string,
+  description: PropTypes.string,
+  page: PropTypes.string,
+  title: PropTypes.string,
+  facts: PropTypes.string,
 }
 
 export default withStyles(styles)(ProjectFeature)

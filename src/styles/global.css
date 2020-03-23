@@ -66,3 +66,7 @@ div .MuiTypography-body1 {
 .MuiGrid-grid-xs-12 {
   margin-left: 25%;
 }
+
+.MuiTypography-colorTextSecondary {
+  height: 44.8px;
+}

@@ -189,8 +189,9 @@ const nayump = {
   img: [noImg],
   description: "A video which runs of scroll",
   facts: [
-    "Had this idea from a codepen",
-    "Uses vanila javascript, no libraries",
+    "Uses vanilla javascript, no libraries",
+    "It's open source",
+    "Saw webapps similar to this on codepen",
   ],
 }
 const simpleTodoApp_withReactHooks = {

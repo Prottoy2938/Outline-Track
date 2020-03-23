@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "outline",
   "private": true,
-  "description": "A small webapp sharing website",
+  "description": "A small website for keeping track of my projects",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Prottay Rudra",
   "dependencies": {
     "@material-ui/core": "^4.8.2",
     "@material-ui/icons": "^4.5.1",
@@ -34,6 +34,8 @@
     "window": "^4.2.6"
   },
   "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -52,9 +54,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/Prottoy2938/Outline-Track"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/Prottoy2938/Outline-Track/issues"
   }
 }

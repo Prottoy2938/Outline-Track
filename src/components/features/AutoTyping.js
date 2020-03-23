@@ -1,6 +1,7 @@
 import React from "react"
 import "../../styles/AutoTyping.css"
 import Typed from "typed.js"
+import PropTypes from "prop-types"
 
 class AutoTyping extends React.Component {
   componentDidMount() {
@@ -38,4 +39,9 @@ class AutoTyping extends React.Component {
     )
   }
 }
+
+AutoTyping.propTypes = {
+  strings: PropTypes.arrayOf(PropTypes.string),
+}
+
 export default AutoTyping

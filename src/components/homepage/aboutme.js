@@ -36,7 +36,7 @@ const AboutMeDrawer = ({ classes, shutdown, open }) => {
             className={classes.gitHubButton}
             startIcon={<GitHubIcon />}
           >
-            I'm on GitHub
+            {`I'm on GitHub`}
           </Button>
         </a>
 
@@ -51,8 +51,7 @@ const AboutMeDrawer = ({ classes, shutdown, open }) => {
             className={classes.linkedInButton}
             startIcon={<LinkedInIcon color="primary" />}
           >
-            {" "}
-            I'm on LinkedIn
+            {`I'm on LinkedIn`}
           </Button>
         </a>
       </div>

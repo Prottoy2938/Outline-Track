@@ -10,6 +10,7 @@ import Typography from "@material-ui/core/Typography"
 import { ThemeContext } from "../contexts/themeContext"
 import Tooltip from "@material-ui/core/Tooltip"
 import styles from "../styles/mediaCardStyles"
+import PropTypes from "prop-types"
 
 function MediaCard({
   classes,
@@ -21,6 +22,7 @@ function MediaCard({
   img,
 }) {
   const { isDarkMode } = useContext(ThemeContext)
+
   const previewButtonStyle = {
     backgroundColor: isDarkMode && "#b9c7de",
     boxShadow: isDarkMode && "none",
@@ -84,4 +86,15 @@ function MediaCard({
     </Card>
   )
 }
+
+MediaCard.propTypes = {
+  classes: PropTypes.object.isRequired,
+  toolTip: PropTypes.string,
+  previewLink: PropTypes.string,
+  learnMoreLink: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  img: PropTypes.node,
+}
+
 export default withStyles(styles)(MediaCard)

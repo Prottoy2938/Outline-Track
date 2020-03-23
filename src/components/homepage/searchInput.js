@@ -9,6 +9,8 @@ import InputAdornment from "@material-ui/core/InputAdornment"
 import SearchIcon from "@material-ui/icons/Search"
 import IconButton from "@material-ui/core/IconButton"
 import { ThemeContext } from "../contexts/themeContext"
+import PropTypes from "prop-types"
+
 function FreeSolo(props) {
   const { isDarkMode } = useContext(ThemeContext)
   const [value, setvalue] = useState("")
@@ -103,4 +105,9 @@ function FreeSolo(props) {
     </div>
   )
 }
+
+FreeSolo.propTypes = {
+  classes: PropTypes.object.isRequired,
+}
+
 export default withStyles(styles)(FreeSolo)

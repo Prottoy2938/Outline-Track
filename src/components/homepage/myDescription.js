@@ -3,6 +3,7 @@ import Paper from "@material-ui/core/Paper"
 import { withStyles } from "@material-ui/core/styles"
 import AboutMe from "./aboutme"
 import styles from "../styles/myDescriptionStyles"
+import PropTypes from "prop-types"
 
 const MyDescription = ({ classes }) => {
   const [aboutMeOpen, setAboutMeOpen] = useState(false)
@@ -32,4 +33,9 @@ const MyDescription = ({ classes }) => {
     </Paper>
   )
 }
+
+MyDescription.propTypes = {
+  classes: PropTypes.object.isRequired,
+}
+
 export default withStyles(styles)(MyDescription)

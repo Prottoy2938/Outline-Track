@@ -90,6 +90,7 @@ const CollapsibleAppBar = ({ classes, children }) => {
 
 CollapsibleAppBar.propTypes = {
   classes: PropTypes.object.isRequired,
+  children: PropTypes.any,
 }
 
 export default withStyles(styles)(CollapsibleAppBar)

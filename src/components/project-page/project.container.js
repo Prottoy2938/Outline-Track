@@ -1,7 +1,7 @@
 import React from "react"
-import ImageSlider from "./imageSlider"
-import ProjectFeatures from "./projectFeatures"
-import { ThemeProvider } from "../contexts/themeContext"
+import ImageSlider from "./image-slider"
+import ProjectFeatures from "./project-features"
+import { ThemeProvider } from "../common/theme.context"
 import PropTypes from "prop-types"
 
 const Projects = ({ details }) => {

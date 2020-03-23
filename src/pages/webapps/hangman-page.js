@@ -1,5 +1,5 @@
 import React from "react"
-import Projects from "../../components/project-page/projects"
+import Projects from "../../components/project-page/project.container.js"
 import { hangMan } from "../../components/project-page/projectDetails"
 import SEO from "../../components/common/seo"
 

@@ -6,7 +6,7 @@ const NotFoundPage = () => {
   console.log("Favicon from icons8")
   return (
     <>
-      <SEO title="404: Not found" />
+      <SEO title="404: Not found" description="Page not found" />
       <div className="container">
         <h1 className="title">Page Not Found</h1>
         <p className="description">

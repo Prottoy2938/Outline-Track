@@ -1,9 +1,9 @@
 import React, { useContext } from "react"
 import AutoTyping from "../features/AutoTyping"
-import SearchInput from "./searchFieldjs"
+import SearchInput from "./searchField.js"
 import { withStyles } from "@material-ui/core/styles"
 import styles from "../../styles/homepagetreeStyles"
-import { ThemeContext } from "../contexts/themeContext"
+import { ThemeContext } from "../common/theme.context"
 import Example from "../features/rotate-animation"
 import PropTypes from "prop-types"
 

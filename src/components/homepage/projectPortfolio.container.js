@@ -11,7 +11,7 @@ import yahtzeeImg from "../../images/yahtzee/yahtzee.png"
 import todoReactImg from "../../images/todoReact/todoReact1.png"
 import lightsOutImg from "../../images/lightsOut/lightsOut (1).png"
 import weatherAppImg from "../../images/weather/weather.png"
-import { ThemeContext } from "../contexts/themeContext"
+import { ThemeContext } from "../common/theme.context"
 import ingredientImg from "../../images/ingredient/ingredient.png"
 import PropTypes from "prop-types"
 

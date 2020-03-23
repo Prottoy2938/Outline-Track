@@ -4,7 +4,7 @@ import HomepageTree from "../components/homepage/firstLook.container"
 import Portfolio from "../components/homepage/projectPortfolio.container"
 import MyDescription from "../components/homepage/myDescription"
 import AppbarLayout from "../components/common/appbarlayout"
-import { ThemeProvider } from "../components/contexts/themeContext"
+import { ThemeProvider } from "../components/common/theme.context"
 import "../styles/layout.css"
 
 const IndexPage = () => {

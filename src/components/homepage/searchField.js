@@ -8,7 +8,7 @@ import styles from "../../styles/searchInputStyles"
 import InputAdornment from "@material-ui/core/InputAdornment"
 import SearchIcon from "@material-ui/icons/Search"
 import IconButton from "@material-ui/core/IconButton"
-import { ThemeContext } from "../contexts/themeContext"
+import { ThemeContext } from "../common/theme.context"
 import PropTypes from "prop-types"
 
 function FreeSolo(props) {

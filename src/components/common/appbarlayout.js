@@ -7,7 +7,7 @@ import Typography from "@material-ui/core/Typography"
 import IconButton from "@material-ui/core/IconButton"
 import Brightness4Icon from "@material-ui/icons/Brightness4"
 import BrightnessHighIcon from "@material-ui/icons/BrightnessHigh"
-import { ThemeContext } from "../contexts/themeContext"
+import { ThemeContext } from "./theme.context"
 import { navigate } from "gatsby"
 import styles from "../../styles/appbarLayoutStyles"
 

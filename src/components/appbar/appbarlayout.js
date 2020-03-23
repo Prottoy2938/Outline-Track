@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useContext, useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import { withStyles } from "@material-ui/core/styles"
 import AppBar from "@material-ui/core/AppBar"
@@ -11,99 +11,81 @@ import { ThemeContext } from "../contexts/themeContext"
 import { navigate } from "gatsby"
 import styles from "../styles/appbarLayoutStyles"
 
-class CollapsibleAppBar extends React.PureComponent {
-  static contextType = ThemeContext
+const CollapsibleAppBar = ({ classes, children }) => {
+  const { isDarkMode, toggleDarkMode } = useContext(ThemeContext)
+  const [shouldShow, setShouldShow] = useState(null)
 
-  constructor(props) {
-    super(props)
+  let lastScroll = null
 
-    this.state = {
-      shouldShow: null,
-    }
+  const handleScroll = () => {
+    const lastScrollWindow = window.scrollY
 
-    this.lastScroll = null
-
-    this.handleScroll = this.handleScroll.bind(this)
-  }
-
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll, { passive: true })
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll)
-  }
-
-  handleScroll() {
-    const lastScroll = window.scrollY
-
-    if (lastScroll === this.state.lastScroll) {
+    if (lastScrollWindow === lastScroll) {
       return
     }
 
-    const shouldShow =
-      this.lastScroll !== null ? lastScroll < this.lastScroll : null
+    const shouldShow1 =
+      lastScroll !== null ? lastScrollWindow < lastScroll : null
 
-    if (shouldShow !== this.state.shouldShow) {
-      this.setState(prevState => ({
-        ...prevState,
-        shouldShow,
-      }))
+    if (shouldShow1 !== shouldShow) {
+      setShouldShow(shouldShow1)
     }
 
-    this.lastScroll = lastScroll
+    lastScroll = lastScrollWindow
   }
 
-  getScrollClassName() {
-    if (this.state.shouldShow === null) {
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
+
+  const getScrollClassName = () => {
+    if (shouldShow === null) {
       return ""
     }
 
-    return this.state.shouldShow
-      ? this.props.classes.show
-      : this.props.classes.hide
+    return shouldShow ? classes.show : classes.hide
   }
 
-  render() {
-    const { isDarkMode, toggleDarkMode } = this.context
-    const { classes } = this.props
-    const appBarBackground = {
-      backgroundColor: isDarkMode
-        ? "rgb(48, 54, 66)"
-        : "rgba(44, 142, 172, 0.76)",
-      boxShadow: isDarkMode && "none",
-    }
-    const titleColor = {
-      color: isDarkMode && "#8d9096",
-    }
-    return (
-      <>
-        <AppBar
-          position="fixed"
-          style={appBarBackground}
-          className={`${classes.root} ${this.getScrollClassName()}`}
-        >
-          <Toolbar>
-            <Typography
-              className={classes.title}
-              style={titleColor}
-              onClick={() => navigate("/")}
-            >
-              OUTLINE
-            </Typography>
-            <IconButton
-              aria-label="Brightness"
-              className={classes.iconButton}
-              onClick={toggleDarkMode}
-            >
-              {isDarkMode ? <Brightness4Icon /> : <BrightnessHighIcon />}
-            </IconButton>
-          </Toolbar>
-        </AppBar>
-        {this.props.children}
-      </>
-    )
+  //styles for dark mode
+  const appBarBackground = {
+    backgroundColor: isDarkMode
+      ? "rgb(48, 54, 66)"
+      : "rgba(44, 142, 172, 0.76)",
+    boxShadow: isDarkMode && "none",
   }
+  const titleColor = {
+    color: isDarkMode && "#8d9096",
+  }
+  return (
+    <>
+      <AppBar
+        position="fixed"
+        style={appBarBackground}
+        className={`${classes.root} ${getScrollClassName()}`}
+      >
+        <Toolbar>
+          <Typography
+            className={classes.title}
+            style={titleColor}
+            onClick={() => navigate("/")}
+          >
+            OUTLINE
+          </Typography>
+          <IconButton
+            aria-label="Brightness"
+            className={classes.iconButton}
+            onClick={toggleDarkMode}
+          >
+            {isDarkMode ? <Brightness4Icon /> : <BrightnessHighIcon />}
+          </IconButton>
+        </Toolbar>
+      </AppBar>
+      {children}
+    </>
+  )
 }
 
 CollapsibleAppBar.propTypes = {

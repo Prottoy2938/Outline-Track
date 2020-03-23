@@ -27,7 +27,7 @@ const HomepageTree = props => {
               "<span>like: <span style='border-bottom: 2px solid #000000'>Lightsout Game</span></span>",
               "<span>like: <span style='border-bottom: 2px solid #004ade'>Weather App</span></span>",
               "<span>like: <span  style='border-bottom: 2px solid #6b492f'>Pokemon Game</></span>",
-              "<span>like: <span style='border-bottom: 2px solid #db0075'>Video on scroll - Nayump</></span>",
+              "<span>like: <span style='border-bottom: 2px solid #560059'>Video on scroll - Nayump</></span>",
               "<span>like: <span style='border-bottom: 2px solid #2a2e64'>SignIn Page</></span>",
               "<span>like: <span style='border-bottom: 2px solid #f0c220'>Dad Jokes</></span>",
               "<span>like: <span style='border-bottom: 2px solid #e24645'>TodoList</></span>",

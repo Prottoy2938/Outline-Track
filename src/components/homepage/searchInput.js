@@ -44,7 +44,6 @@ function FreeSolo(props) {
         className={classes.input}
         freeSolo
         clearOnEscape={true}
-        selectOnFocus={false}
         inputValue={value}
         onChange={(event, value) => handleSubmit(value)}
         onInputChange={handleChange}

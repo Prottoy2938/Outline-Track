@@ -1,6 +1,6 @@
 import React from "react"
 import Projects from "../../components/project-page/project.container.js"
-import { dogPortfolio } from "../../components/project-page/projectDetails"
+import { dogPortfolio } from "../../components/project-page/project-information"
 import SEO from "../../components/common/seo"
 
 const DogPortfolio = () => {

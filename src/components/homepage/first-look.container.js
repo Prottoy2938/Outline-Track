@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
-import AutoTyping from "../features/AutoTyping"
-import SearchInput from "./searchField.js"
+import AutoTyping from "../features/auto-typing"
+import SearchInput from "./search-bar.js"
 import { withStyles } from "@material-ui/core/styles"
 import styles from "../../styles/homepagetreeStyles"
 import { ThemeContext } from "../common/theme.context"

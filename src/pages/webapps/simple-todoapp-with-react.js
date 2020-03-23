@@ -1,6 +1,6 @@
 import React from "react"
 import Projects from "../../components/project-page/project.container.js"
-import { simpleTodoApp_withReactHooks } from "../../components/project-page/projectDetails"
+import { simpleTodoApp_withReactHooks } from "../../components/project-page/project-information"
 import SEO from "../../components/common/seo"
 
 const SimpleTodoApp_withReact = () => {

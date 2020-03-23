@@ -1,6 +1,6 @@
 import React from "react"
 import Projects from "../../components/project-page/project.container.js"
-import { yahtzee } from "../../components/project-page/projectDetails"
+import { yahtzee } from "../../components/project-page/project-information"
 import SEO from "../../components/common/seo"
 
 const Yahtzee = () => {

@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react"
 import { navigate } from "gatsby"
-import ProjectList from "./projectInformation"
+import ProjectList from "./project-information"
 import TextField from "@material-ui/core/TextField"
 import Autocomplete from "@material-ui/lab/Autocomplete"
 import { withStyles } from "@material-ui/core/styles"

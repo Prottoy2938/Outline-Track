@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import MediaCard from "./projectCard"
+import MediaCard from "./project-card"
 import Grid from "@material-ui/core/Grid"
 import { withStyles } from "@material-ui/core/styles"
 import Container from "@material-ui/core/Container"

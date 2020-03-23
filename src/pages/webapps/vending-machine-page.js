@@ -1,6 +1,6 @@
 import React from "react"
 import Projects from "../../components/project-page/project.container.js"
-import { vendingMachine } from "../../components/project-page/projectDetails"
+import { vendingMachine } from "../../components/project-page/project-information"
 import SEO from "../../components/common/seo"
 
 const VendingMachine = () => {

@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Paper from "@material-ui/core/Paper"
 import { withStyles } from "@material-ui/core/styles"
-import AboutMe from "./aboutmeDrawer"
+import AboutMe from "./aboutme-drawer"
 import styles from "../../styles/myDescriptionStyles"
 import PropTypes from "prop-types"
 

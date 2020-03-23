@@ -9,7 +9,7 @@ import Button from "@material-ui/core/Button"
 import Typography from "@material-ui/core/Typography"
 import { ThemeContext } from "../contexts/themeContext"
 import Tooltip from "@material-ui/core/Tooltip"
-import styles from "../styles/mediaCardStyles"
+import styles from "../../styles/mediaCardStyles"
 import PropTypes from "prop-types"
 
 function MediaCard({

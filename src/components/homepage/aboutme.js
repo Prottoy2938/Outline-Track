@@ -7,7 +7,7 @@ import Button from "@material-ui/core/Button"
 import CancelPresentationIcon from "@material-ui/icons/CancelPresentation"
 import IconButton from "@material-ui/core/IconButton"
 import { withStyles } from "@material-ui/core/styles"
-import styles from "../styles/aboutmeStyles"
+import styles from "../../styles/aboutmeStyles"
 
 const AboutMeDrawer = ({ classes, shutdown, open }) => {
   const fullList = () => (

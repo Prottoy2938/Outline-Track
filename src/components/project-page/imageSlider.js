@@ -1,8 +1,7 @@
 import React, { useState } from "react"
-import "../styles/imageSliderStyles"
 import { withStyles } from "@material-ui/core/styles"
 import { Gallery, GalleryImage } from "react-gesture-gallery"
-import styles from "../styles/imageSliderStyles"
+import styles from "../../styles/imageSliderStyles"
 
 function ImageSlider(props) {
   const { classes, images } = props

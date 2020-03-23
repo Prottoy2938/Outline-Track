@@ -9,7 +9,7 @@ import Brightness4Icon from "@material-ui/icons/Brightness4"
 import BrightnessHighIcon from "@material-ui/icons/BrightnessHigh"
 import { ThemeContext } from "../contexts/themeContext"
 import { navigate } from "gatsby"
-import styles from "../styles/appbarLayoutStyles"
+import styles from "../../styles/appbarLayoutStyles"
 
 const CollapsibleAppBar = ({ classes, children }) => {
   const { isDarkMode, toggleDarkMode } = useContext(ThemeContext)

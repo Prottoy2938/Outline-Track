@@ -1,6 +1,6 @@
 import React from "react"
 import SEO from "../components/common/seo"
-import "../components/styles/404.css"
+import "../styles/404.css"
 import logoImg from "../images/gatsby-icon.png"
 const NotFoundPage = () => {
   console.log("Favicon from icons8")

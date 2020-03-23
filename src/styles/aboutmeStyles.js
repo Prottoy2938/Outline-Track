@@ -1,4 +1,4 @@
-import sizes from "../styles/sizes"
+import sizes from "./sizes"
 const styles = {
   fullList: {
     width: "100%",

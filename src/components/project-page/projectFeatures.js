@@ -9,7 +9,7 @@ import Radio from "@material-ui/core/Radio"
 import RadioGroup from "@material-ui/core/RadioGroup"
 import FormControlLabel from "@material-ui/core/FormControlLabel"
 import { withStyles } from "@material-ui/core/styles"
-import styles from "../styles/projectFeatureStyles"
+import styles from "../../styles/projectFeatureStyles"
 import IconButton from "@material-ui/core/IconButton"
 const ProjectFeature = props => {
   const { classes, github, description, page, title, facts } = props

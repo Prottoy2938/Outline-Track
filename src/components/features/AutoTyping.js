@@ -1,5 +1,5 @@
 import React from "react"
-import "../styles/AutoTyping.css"
+import "../../styles/AutoTyping.css"
 import Typed from "typed.js"
 
 class AutoTyping extends React.Component {

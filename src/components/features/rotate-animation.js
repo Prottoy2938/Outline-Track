@@ -1,5 +1,5 @@
 import React from "react"
-import sizes from "../styles/sizes"
+import sizes from "../../styles/sizes"
 import { motion } from "framer-motion"
 import { withStyles } from "@material-ui/core/styles"
 

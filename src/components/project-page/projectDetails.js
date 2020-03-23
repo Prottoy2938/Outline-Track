@@ -249,11 +249,14 @@ const taskManager = {
 }
 const ingredient = {
   title: "Ingredient",
-  description: "A web application based on getting recipe for cooking foods",
+  description: "A web application to get food recipe",
   facts: [
-    "Build using Reactjs framwork",
-    "Responsive for all screen size",
-    "Working on the add more features",
+    "Its in progress now",
+    "uses Reactjs Framework",
+    "Responsive on all screen size",
+    "Build on top of NextJs and TypeScript",
+    "Can provide useful search suggestions",
+    "Working on to add more features",
   ],
   img: [ingredientImg, ingredient1Img, ingredient2Img],
   github: "https://github.com/Prottoy2938/ingredient-code",

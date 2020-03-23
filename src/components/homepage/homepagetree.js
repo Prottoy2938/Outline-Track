@@ -5,9 +5,9 @@ import { withStyles } from "@material-ui/core/styles"
 import styles from "../../styles/homepagetreeStyles"
 import { ThemeContext } from "../contexts/themeContext"
 import Example from "../features/rotate-animation"
+import PropTypes from "prop-types"
 
-const HomepageTree = props => {
-  const { classes } = props
+const HomepageTree = ({ classes }) => {
   const { isDarkMode } = useContext(ThemeContext)
 
   const handleSubmit = e => {
@@ -45,4 +45,9 @@ const HomepageTree = props => {
     </div>
   )
 }
+
+HomepageTree.propTypes = {
+  classes: PropTypes.object.isRequired,
+}
+
 export default withStyles(styles)(HomepageTree)

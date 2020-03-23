@@ -13,8 +13,9 @@ import lightsOutImg from "../../images/lightsOut/lightsOut (1).png"
 import weatherAppImg from "../../images/weather/weather.png"
 import { ThemeContext } from "../contexts/themeContext"
 import ingredientImg from "../../images/ingredient/ingredient.png"
-function Portfolio(props) {
-  const { classes } = props
+import PropTypes from "prop-types"
+
+function Portfolio({ classes }) {
   const { isDarkMode } = useContext(ThemeContext)
 
   const portfolioTitleStyles = {
@@ -45,7 +46,7 @@ function Portfolio(props) {
             img={ingredientImg}
             previewLink="https://ingredient-d4129.firebaseapp.com/"
             learnMoreLink="/ingredient-page/"
-            description="A web application based on getting recipe for cooking foods"
+            description="A web application to get food recipe"
           />
         </Grid>
         <Grid item xs={12} lg={4} md={6} sm={6}>
@@ -121,12 +122,16 @@ function Portfolio(props) {
             img={weatherAppImg}
             previewLink="http://sm-nodejs-weatherapp.herokuapp.com/"
             learnMoreLink="/weather-app/"
-            description="A web application for getting weather data"
+            description="A web application to get food recipe"
           />
         </Grid>
       </Grid>
     </Container>
   )
+}
+
+Portfolio.propTypes = {
+  classes: PropTypes.object.isRequired,
 }
 
 export default withStyles(styles)(Portfolio)

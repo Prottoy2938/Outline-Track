@@ -41,7 +41,7 @@ function MediaCard({
         <CardMedia
           className={classes.media}
           image={img}
-          title="Contemplative Reptile"
+          title="project image"
         />
         <CardContent>
           <Typography gutterBottom variant="h5">

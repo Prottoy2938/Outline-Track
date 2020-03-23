@@ -8,6 +8,7 @@ import CancelPresentationIcon from "@material-ui/icons/CancelPresentation"
 import IconButton from "@material-ui/core/IconButton"
 import { withStyles } from "@material-ui/core/styles"
 import styles from "../../styles/aboutmeStyles"
+import PropTypes from "prop-types"
 
 const AboutMeDrawer = ({ classes, shutdown, open }) => {
   const fullList = () => (
@@ -77,4 +78,11 @@ const AboutMeDrawer = ({ classes, shutdown, open }) => {
     </div>
   )
 }
+
+AboutMeDrawer.propTypes = {
+  classes: PropTypes.object.isRequired,
+  shutdown: PropTypes.func,
+  open: PropTypes.bool,
+}
+
 export default withStyles(styles)(AboutMeDrawer)

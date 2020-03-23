@@ -2,8 +2,9 @@ import React from "react"
 import Snackbar from "@material-ui/core/Snackbar"
 import IconButton from "@material-ui/core/IconButton"
 import CloseIcon from "@material-ui/icons/Close"
+import PropTypes from "prop-types"
 
-export default function SimpleSnackbar(props) {
+export default function SimpleSnackbar({ open, shutdown }) {
   return (
     <div>
       <Snackbar
@@ -11,7 +12,7 @@ export default function SimpleSnackbar(props) {
           vertical: "bottom",
           horizontal: "left",
         }}
-        open={props.open}
+        open={open}
         autoHideDuration={2500}
         message="Project page is getting ready"
         action={
@@ -20,7 +21,7 @@ export default function SimpleSnackbar(props) {
               size="small"
               aria-label="close"
               color="inherit"
-              onClick={props.shutdown}
+              onClick={shutdown}
             >
               <CloseIcon fontSize="small" />
             </IconButton>

@@ -19,9 +19,8 @@ const AboutMeDrawer = ({ classes, shutdown, open }) => {
       <p className={classes.description}>
         Hi! I am Prottay Rudra. I started doing programming because I wanted to
         spend my time on something that I wanted to do. Right now I am spending
-        most of my time on JavaScript and web development frameworks. Besides
-        programming, I have interest in working on artificial intelligence and
-        outer space.
+        most of my time on Software Development. Besides programming, I have
+        interest in working on artificial intelligence and outer space.
       </p>
       <div className={classes.linkContainer}>
         <a

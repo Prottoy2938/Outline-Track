@@ -260,8 +260,8 @@ const ingredient = {
     "Working on to add more features",
   ],
   img: [ingredientImg, ingredient1Img, ingredient2Img],
-  github: "https://github.com/Prottoy2938/ingredient-code",
-  page: "https://ingredient-d4129.firebaseapp.com/",
+  github: "https://github.com/Prottoy2938/repository-is-for-private-project/",
+  page: "https://ingredient.now.sh/",
 }
 
 export {

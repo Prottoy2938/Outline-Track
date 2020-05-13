@@ -44,7 +44,7 @@ function Portfolio({ classes }) {
           <MediaCard
             title={"Ingredient"}
             img={ingredientImg}
-            previewLink="https://ingredient-d4129.firebaseapp.com/"
+            previewLink="https://ingredient.now.sh/"
             learnMoreLink="/ingredient-page/"
             description="A web application to get food recipe"
           />

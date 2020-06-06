@@ -51,7 +51,7 @@ function Portfolio({ classes }) {
         </Grid>
         <Grid item xs={12} lg={4} md={6} sm={6}>
           <MediaCard
-            previewLink="http://localhost:8000/image-recognition-page"
+            previewLink="https://prottoy2938.github.io/image-search-mobileNet/"
             img={ImageRecognitionImg}
             title="Image Recognition"
             learnMoreLink="/image-recognition-page/"

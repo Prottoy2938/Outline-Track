@@ -6,7 +6,7 @@ import Container from "@material-ui/core/Container"
 import Typography from "@material-ui/core/Typography"
 import Box from "@material-ui/core/Box"
 import styles from "../../styles/portfolioStyles"
-import colorPickerImg from "../../images/colorPicker/colorPicker.png"
+import ImageRecognitionImg from "../../images/imageRecognition/imageRecognitionEX.png"
 import yahtzeeImg from "../../images/yahtzee/yahtzee.png"
 import todoReactImg from "../../images/todoReact/todoReact1.png"
 import lightsOutImg from "../../images/lightsOut/lightsOut (1).png"
@@ -51,12 +51,11 @@ function Portfolio({ classes }) {
         </Grid>
         <Grid item xs={12} lg={4} md={6} sm={6}>
           <MediaCard
-            toolTip="There seems to be a bug on styling in the production field for this application, I am working on it."
-            previewLink="https://prottoy2938.github.io/react-color-picker/"
-            img={colorPickerImg}
-            title="Color Picker"
-            learnMoreLink="/react-color-picker-page/"
-            description="A webapp which allows user to create their own color pallete and copy color code"
+            previewLink="http://localhost:8000/image-recognition-page"
+            img={ImageRecognitionImg}
+            title="Image Recognition"
+            learnMoreLink="/image-recognition-page/"
+            description="A web application that uses AI to get image details"
           />
         </Grid>
         <Grid

@@ -1,5 +1,8 @@
 export default [
   {
+    name: "Image Recognition Page",
+  },
+  {
     name: "Card Dealer Page",
   },
   {

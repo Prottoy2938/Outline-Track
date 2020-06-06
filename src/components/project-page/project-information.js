@@ -46,6 +46,10 @@ import taskManager2Img from "../../images/todoReact/todoReact2.png"
 import ingredientImg from "../../images/ingredient/ingredient.png"
 import ingredient1Img from "../../images/ingredient/ingredient1.png"
 import ingredient2Img from "../../images/ingredient/ingredient2.png"
+import imageRecognitionImg from "../../images/imageRecognition/imageRecognition.png"
+import imageRecognitionImg1 from "../../images/imageRecognition/imageRecognition1.png"
+import imageRecognitionImg2 from "../../images/imageRecognition/imageRecognition2.png"
+import imageRecognitionImg3 from "../../images/imageRecognition/imageRecognition3.png"
 
 const reactColorPicker = {
   title: "React Color Picker",
@@ -53,7 +57,7 @@ const reactColorPicker = {
   page: "https://prottoy2938.github.io/react-color-picker/",
   img: [colorPicker, colorPicker1, colorPicker2, colorPicker3, colorPicker4],
   description:
-    "A webapp which allows user to create their own color pallete and copy color code",
+    "A webapp which allows user to create their own color palette and copy color code",
   facts: [
     "It can generate multiple related color based on color",
     "Uses drag and drop methood to give a better visualization",
@@ -264,6 +268,26 @@ const ingredient = {
   page: "https://ingredient.now.sh/",
 }
 
+const imageRecognition = {
+  title: "Image Recognition Search",
+  description: "A web application that uses AI to get image details",
+  facts: [
+    "Can successfully recognize most of the regular images",
+    "Uses MobileNet Image Classification Model",
+    "It uses ML5 library",
+    "uses P5js library",
+    "Responsive across all device",
+  ],
+  img: [
+    imageRecognitionImg,
+    imageRecognitionImg1,
+    imageRecognitionImg2,
+    imageRecognitionImg3,
+  ],
+  github: "https://github.com/Prottoy2938/image-search-mobileNet",
+  page: "https://prottoy2938.github.io/image-search-mobileNet/",
+}
+
 export {
   reactColorPicker,
   dogPortfolio,
@@ -280,4 +304,5 @@ export {
   lightsOut,
   taskManager,
   ingredient,
+  imageRecognition,
 }

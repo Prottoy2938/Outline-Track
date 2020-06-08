@@ -46,6 +46,8 @@ import taskManager2Img from "../../images/todoReact/todoReact2.png"
 import ingredientImg from "../../images/ingredient/ingredient.png"
 import ingredient1Img from "../../images/ingredient/ingredient1.png"
 import ingredient2Img from "../../images/ingredient/ingredient2.png"
+import ingredient3Img from "../../images/ingredient/ingredient3.png"
+import ingredient4Img from "../../images/ingredient/ingredient4.png"
 import imageRecognitionImg from "../../images/imageRecognition/imageRecognition.png"
 import imageRecognitionImg1 from "../../images/imageRecognition/imageRecognition1.png"
 import imageRecognitionImg2 from "../../images/imageRecognition/imageRecognition2.png"
@@ -263,7 +265,13 @@ const ingredient = {
     "Can provide useful search suggestions",
     "Working on to add more features",
   ],
-  img: [ingredientImg, ingredient1Img, ingredient2Img],
+  img: [
+    ingredientImg,
+    ingredient1Img,
+    ingredient2Img,
+    ingredient3Img,
+    ingredient4Img,
+  ],
   github: "https://github.com/Prottoy2938/repository-is-for-private-project/",
   page: "https://ingredient.now.sh/",
 }

@@ -272,7 +272,7 @@ const ingredient = {
     ingredient3Img,
     ingredient4Img,
   ],
-  github: "https://github.com/Prottoy2938/repository-is-for-private-project/",
+  github: "https://github.com/Prottoy2938/ingredient-code",
   page: "https://ingredient.now.sh/",
 }
 

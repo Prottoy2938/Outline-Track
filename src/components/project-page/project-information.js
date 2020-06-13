@@ -293,7 +293,7 @@ const imageRecognition = {
     imageRecognitionImg3,
   ],
   github: "https://github.com/Prottoy2938/image-search-mobileNet",
-  page: "https://prottoy2938.github.io/image-search-mobileNet/",
+  page: "https://cluster-11.github.io/image-search-mobileNet/",
 }
 
 export {

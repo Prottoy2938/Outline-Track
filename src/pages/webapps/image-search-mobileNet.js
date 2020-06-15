@@ -5,7 +5,7 @@ export default () => {
   //to a new url
   useEffect(() => {
     window.location.replace(
-      "https://cluster-11.github.io/image-search-mobileNet/"
+      "https://cluster-11.github.io/image-recognition-mobileNet/"
     )
   }, [])
   return null

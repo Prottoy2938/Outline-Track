@@ -1,6 +1,6 @@
 import React from "react"
 import Drawer from "@material-ui/core/Drawer"
-import myImg from "../../images/my image -b.jpg"
+import myImg from "../../images/my-img.jpg"
 import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import GitHubIcon from "@material-ui/icons/GitHub"
 import Button from "@material-ui/core/Button"

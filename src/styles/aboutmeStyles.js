@@ -13,10 +13,10 @@ const styles = {
     marginTop: "10px",
     display: "block",
     margin: "0 auto",
-    borderRadius: "50%",
-    width: "200px",
+    borderRadius: "20%",
+    width: "300px",
     [sizes.down("xs")]: {
-      width: "130px",
+      width: "250px",
     },
   },
   title: {

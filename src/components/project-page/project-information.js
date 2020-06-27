@@ -292,8 +292,8 @@ const imageRecognition = {
     imageRecognitionImg2,
     imageRecognitionImg3,
   ],
-  github: "https://github.com/cluster-11/image-recognition-mobileNet",
-  page: "https://cluster-11.github.io/image-recognition-mobileNet/",
+  github: "https://github.com/cluster-11/image-recognition-starter/",
+  page: "https://cluster-11.github.io/image-recognition-starter/",
 }
 
 export {

@@ -280,7 +280,7 @@ const imageRecognition = {
   title: "Image Recognition Search",
   description: "A web application that uses AI to get image details",
   facts: [
-    "Can successfully recognize most of the regular images",
+    "Can successfully recognize most of the common images",
     "Uses MobileNet Image Classification Model",
     "It uses ML5 library",
     "uses P5js library",
@@ -292,8 +292,8 @@ const imageRecognition = {
     imageRecognitionImg2,
     imageRecognitionImg3,
   ],
-  github: "https://github.com/cluster-11/image-recognition-starter/",
-  page: "https://cluster-11.github.io/image-recognition-starter/",
+  github: "https://github.com/cluster-11/mobileNet-image-recognition-starter",
+  page: "https://cluster-11.github.io/mobileNet-image-recognition-starter/",
 }
 
 export {

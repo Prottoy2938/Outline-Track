@@ -52,6 +52,7 @@ import imageRecognitionImg from "../../images/imageRecognition/imageRecognition.
 import imageRecognitionImg1 from "../../images/imageRecognition/imageRecognition1.png"
 import imageRecognitionImg2 from "../../images/imageRecognition/imageRecognition2.png"
 import imageRecognitionImg3 from "../../images/imageRecognition/imageRecognition3.png"
+import inDevelopmentImg from "../../images/In Development.jpg"
 
 const reactColorPicker = {
   title: "React Color Picker",
@@ -296,6 +297,39 @@ const imageRecognition = {
   page: "https://cluster-11.github.io/mobileNet-image-recognition-starter/",
 }
 
+const backDrop = {
+  title: "BackDrop",
+  description:
+    "A web application to change/modify video background to anything.",
+  facts: [
+    "Edits the background of the video in real time",
+    "Can change background to anything",
+    "It uses uNet neural network",
+    "User can download their edited video",
+    "User can capture images from the video",
+    "In development, more features coming soon",
+  ],
+  img: [inDevelopmentImg],
+  github: "https://github.com/Prottoy2938/repository-is-for-private-project",
+  page: "https://backdrop.vercel.app/",
+}
+
+const openMind = {
+  title: "Open Mind",
+  description:
+    "A web application that you can use to train an AI and make it recognize your images",
+  facts: [
+    "All training happens in real time, no waiting to get the model/result",
+    "Responsive on all device",
+    "Source code is opensource and has helpful comments",
+    "Uses KNN Image Classification Model andTensorflowjs library",
+    "Similar to Google's teachable machine classify image project",
+  ],
+  img: [inDevelopmentImg],
+  github: "https://github.com/cluster-11/open-mind",
+  page: "https://trusting-lamarr-fce5fe.netlify.app/",
+}
+
 export {
   reactColorPicker,
   dogPortfolio,
@@ -313,4 +347,6 @@ export {
   taskManager,
   ingredient,
   imageRecognition,
+  backDrop,
+  openMind,
 }

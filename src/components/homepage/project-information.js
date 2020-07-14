@@ -1,6 +1,18 @@
 export default [
   {
+    name: "Ingredient Page",
+  },
+  {
+    name: "Backdrop Page",
+  },
+  {
+    name: "Open Mind Page",
+  },
+  {
     name: "Image Recognition Page",
+  },
+  {
+    name: "Yahtzee Page",
   },
   {
     name: "Card Dealer Page",
@@ -8,9 +20,7 @@ export default [
   {
     name: "React Color Picker Page",
   },
-  {
-    name: "Yahtzee Page",
-  },
+
   {
     name: "Dog Portfolio Page",
   },
@@ -44,8 +54,5 @@ export default [
   },
   {
     name: "Nayump Page",
-  },
-  {
-    name: "Ingredient Page",
   },
 ]

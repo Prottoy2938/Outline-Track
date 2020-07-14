@@ -14,6 +14,7 @@ import weatherAppImg from "../../images/weather/weather.png"
 import { ThemeContext } from "../common/theme.context"
 import ingredientImg from "../../images/ingredient/ingredient.png"
 import PropTypes from "prop-types"
+import inDevelopmentImg from "../../images/In Development.jpg"
 
 function Portfolio({ classes }) {
   const { isDarkMode } = useContext(ThemeContext)
@@ -42,11 +43,30 @@ function Portfolio({ classes }) {
       <Grid container spacing={6}>
         <Grid item xs={12} lg={4} md={6} sm={6}>
           <MediaCard
+            title={"Backdrop"}
+            img={inDevelopmentImg}
+            previewLink="https://backdrop.vercel.app/"
+            learnMoreLink="/backdrop-page"
+            description="A web application to change/modify video background to anything."
+          />
+        </Grid>
+
+        <Grid item xs={12} lg={4} md={6} sm={6}>
+          <MediaCard
             title={"Ingredient"}
             img={ingredientImg}
             previewLink="https://ingredient.now.sh/"
             learnMoreLink="/ingredient-page/"
             description="A web application to get food recipe"
+          />
+        </Grid>
+        <Grid item xs={12} lg={4} md={6} sm={6}>
+          <MediaCard
+            title={"Open Mind"}
+            img={inDevelopmentImg}
+            previewLink="https://trusting-lamarr-fce5fe.netlify.app/"
+            learnMoreLink="/open-mind-page/"
+            description="A web application that you can use to train an AI and make it recognize your images"
           />
         </Grid>
         <Grid item xs={12} lg={4} md={6} sm={6}>

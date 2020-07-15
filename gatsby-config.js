@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-undef
 module.exports = {
   siteMetadata: {
-    title: `Outline`,
+    title: `Outline | Prottay Rudra`,
     description: `A web application to keep track of my projects`,
     author: `Prottay Rudra`,
   },

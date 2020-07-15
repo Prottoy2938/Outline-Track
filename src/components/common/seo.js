@@ -56,6 +56,10 @@ function SEO({ description, lang, meta, title }) {
           content: `https://i.imgur.com/tfy8QMk.jpg`,
         },
         {
+          property: `og:url`,
+          content: `https://prottoy2938.github.io/`,
+        },
+        {
           name: `twitter:card`,
           content: `summary_large_image
           `,

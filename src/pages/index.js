@@ -10,7 +10,10 @@ import "../styles/layout.css"
 const IndexPage = () => {
   return (
     <>
-      <SEO title="Home" description="A webapp to showcase my projects" />
+      <SEO
+        title="Outline | Prottay Rudra"
+        description="A web application to keep track of my projects"
+      />
       <div>
         <ThemeProvider>
           <AppbarLayout />

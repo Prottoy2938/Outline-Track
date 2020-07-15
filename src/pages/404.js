@@ -3,7 +3,6 @@ import SEO from "../components/common/seo"
 import "../styles/404.css"
 import logoImg from "../images/gatsby-icon.png"
 const NotFoundPage = () => {
-  console.log("Favicon from icons8")
   return (
     <>
       <SEO title="404: Not found" description="Page not found" />

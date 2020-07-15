@@ -4,10 +4,11 @@ module.exports = {
     title: `Outline | Prottay Rudra`,
     description: `A web application to keep track of my projects`,
     author: `Prottay Rudra`,
+    siteUrl: `https://prottoy2938.github.io/`,
   },
   plugins: [
     `gatsby-plugin-material-ui`,
-
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

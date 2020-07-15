@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            siteUrl
           }
         }
       }
@@ -57,7 +58,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:url`,
-          content: `https://prottoy2938.github.io/`,
+          content: site.siteMetaData.siteUrl,
         },
         {
           name: `twitter:card`,

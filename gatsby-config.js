@@ -2,7 +2,7 @@
 module.exports = {
   siteMetadata: {
     title: `Outline`,
-    description: `A web application to keep track projects`,
+    description: `A web application to keep track of my projects`,
     author: `Prottay Rudra`,
   },
   plugins: [

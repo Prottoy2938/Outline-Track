@@ -12,7 +12,7 @@ const Cluster11Project = props => {
     <Paper className={classes.gridContainer} elevation={3}>
       <Grid container className={classes.container}>
         <Grid item xs={12} lg={6} md={6} sm={12}>
-          <p className={classes.titleDes}>Currently I'm working on</p>
+          <p className={classes.titleDes}>{"Currently I'm working on"}</p>
           <h1 className={classes.title}>Cluster 11</h1>
         </Grid>
         <Grid

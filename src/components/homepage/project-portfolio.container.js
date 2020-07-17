@@ -10,7 +10,6 @@ import ImageRecognitionImg from "../../images/imageRecognition/imageRecognitionE
 import yahtzeeImg from "../../images/yahtzee/yahtzee.png"
 import todoReactImg from "../../images/todoReact/todoReact1.png"
 import lightsOutImg from "../../images/lightsOut/lightsOut (1).png"
-import weatherAppImg from "../../images/weather/weather.png"
 import { ThemeContext } from "../common/theme.context"
 import ingredientImg from "../../images/ingredient/ingredient.png"
 import PropTypes from "prop-types"
@@ -126,22 +125,6 @@ function Portfolio({ classes }) {
             previewLink="https://prottoy2938.github.io/lights-out/"
             learnMoreLink="/lights-out/"
             description="Lights Out Game"
-          />
-        </Grid>
-        <Grid
-          item
-          xs={12}
-          lg={4}
-          md={6}
-          className={classes.appForMobile}
-          sm={6}
-        >
-          <MediaCard
-            title={"Weather App"}
-            img={weatherAppImg}
-            previewLink="http://sm-nodejs-weatherapp.herokuapp.com/"
-            learnMoreLink="/weather-app/"
-            description="A web application to get food recipe"
           />
         </Grid>
       </Grid>

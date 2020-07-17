@@ -2,7 +2,7 @@ import sizes from "./sizes"
 const styles = {
   MdContainer: {
     marginTop: "16px",
-    marginBottom: "30vh",
+    marginBottom: "18vh",
     [sizes.down("md")]: {
       marginBottom: "15vh",
     },

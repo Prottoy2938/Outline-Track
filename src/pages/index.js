@@ -6,6 +6,7 @@ import MyDescription from "../components/homepage/my-description"
 import AppbarLayout from "../components/common/appbarlayout"
 import { ThemeProvider } from "../components/common/theme.context"
 import "../styles/layout.css"
+import Cluster11Project from "../components/homepage/cluster-11-project"
 
 const IndexPage = () => {
   return (
@@ -20,6 +21,7 @@ const IndexPage = () => {
           <HomepageTree />
           <MyDescription />
           <Portfolio />
+          <Cluster11Project />
         </ThemeProvider>
       </div>
     </>

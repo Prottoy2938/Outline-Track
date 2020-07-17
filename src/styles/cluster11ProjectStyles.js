@@ -19,11 +19,11 @@ const styles = {
     justifyContent: "space-between",
   },
   codeButton: {
-    boxShadow: "0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06)",
+    boxShadow: "0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,0.06)",
     marginLeft: ".75rem",
     paddingTop: ".4rem",
     paddingBottom: ".4rem",
-    fontWeight: 500,
+    fontWeight: "500",
     justifyContent: "center",
     alignItems: "center",
     borderRadius: ".375rem",
@@ -35,12 +35,12 @@ const styles = {
     backgroundColor: "rgb(185, 199, 222)",
   },
   websiteButton: {
-    boxShadow: "0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06)",
+    boxShadow: "0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,0.06)",
     marginLeft: ".75rem",
     paddingTop: ".4rem",
     paddingBottom: ".4rem",
     color: "#5850ec",
-    fontWeight: 500,
+    fontWeight: "500",
     justifyContent: "center",
     alignItems: "center",
     borderRadius: ".375rem",
@@ -57,8 +57,8 @@ const styles = {
   },
   title: {
     fontSize: "1.6rem",
-    fontFamily: 'Roboto", "Helvetica", "Arial", sans-serif',
-    fontWeight: 400,
+    fontFamily: "'Roboto', 'Helvetica', 'Arial', 'sans-serif'",
+    fontWeight: "400",
   },
   [sizes.down("md")]: {
     gridContainer: {
@@ -71,7 +71,7 @@ const styles = {
     },
     codeButton: {
       float: "none",
-      marginLeft: 0,
+      marginLeft: "0",
     },
     btnContainer: {
       marginTop: "3vh",

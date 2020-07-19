@@ -327,7 +327,7 @@ const openMind = {
   ],
   img: [inDevelopmentImg],
   github: "https://github.com/cluster-11/open-mind",
-  page: "https://trusting-lamarr-fce5fe.netlify.app/",
+  page: "https://cluster-11.github.io/open-mind/",
 }
 
 export {

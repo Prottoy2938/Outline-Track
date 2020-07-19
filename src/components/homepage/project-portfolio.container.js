@@ -63,7 +63,7 @@ function Portfolio({ classes }) {
           <MediaCard
             title={"Open Mind"}
             img={inDevelopmentImg}
-            previewLink="https://trusting-lamarr-fce5fe.netlify.app/"
+            previewLink="https://cluster-11.github.io/open-mind/"
             learnMoreLink="/open-mind-page/"
             description="A web application that you can use to train an AI and make it recognize your images"
           />

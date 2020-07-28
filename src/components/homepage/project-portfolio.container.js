@@ -8,12 +8,12 @@ import Box from "@material-ui/core/Box"
 import styles from "../../styles/portfolioStyles"
 import ImageRecognitionImg from "../../images/imageRecognition/imageRecognitionEX.png"
 import yahtzeeImg from "../../images/yahtzee/yahtzee.png"
-import todoReactImg from "../../images/todoReact/todoReact1.png"
 import lightsOutImg from "../../images/lightsOut/lightsOut (1).png"
 import { ThemeContext } from "../common/theme.context"
-import ingredientImg from "../../images/ingredient/ingredient.png"
 import PropTypes from "prop-types"
-import inDevelopmentImg from "../../images/In Development.jpg"
+import OpenMindImg from "../../images/openMind/OpenMind.jpg"
+import ingredientImg from "../../images/ingredient/ingredient-preview.jpg"
+import backdropImg from "../../images/backdrop/backdropImage.jpg"
 
 function Portfolio({ classes }) {
   const { isDarkMode } = useContext(ThemeContext)
@@ -43,7 +43,7 @@ function Portfolio({ classes }) {
         <Grid item xs={12} lg={4} md={6} sm={6}>
           <MediaCard
             title={"Backdrop"}
-            img={inDevelopmentImg}
+            img={backdropImg}
             previewLink="https://backdrop.vercel.app/"
             learnMoreLink="/backdrop-page"
             description="A web application to change/modify video background to anything."
@@ -56,13 +56,13 @@ function Portfolio({ classes }) {
             img={ingredientImg}
             previewLink="https://ingredient.now.sh/"
             learnMoreLink="/ingredient-page/"
-            description="A web application to get food recipe"
+            description="A web application that helps you find food dishes, recipes and prepare ingredients"
           />
         </Grid>
         <Grid item xs={12} lg={4} md={6} sm={6}>
           <MediaCard
             title={"Open Mind"}
-            img={inDevelopmentImg}
+            img={OpenMindImg}
             previewLink="https://cluster-11.github.io/open-mind/"
             learnMoreLink="/open-mind-page/"
             description="A web application that you can use to train an AI and make it recognize your images"
@@ -92,23 +92,6 @@ function Portfolio({ classes }) {
             learnMoreLink="/yahtzee-page/"
             description="Webapp version of Yahtzee game, has all the logic
             "
-          />
-        </Grid>
-
-        <Grid
-          item
-          xs={12}
-          lg={4}
-          md={6}
-          className={classes.appForMobile}
-          sm={6}
-        >
-          <MediaCard
-            title={"Task Manager"}
-            img={todoReactImg}
-            previewLink="https://prottoy2938.github.io/task-manager-react/"
-            learnMoreLink="/task-manager"
-            description="A Task Manager App"
           />
         </Grid>
         <Grid

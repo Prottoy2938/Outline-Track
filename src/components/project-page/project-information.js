@@ -43,6 +43,7 @@ import lightsOut2Img from "../../images/lightsOut/lightsOut (3).png"
 import taskManagerImg from "../../images/todoReact/todoReact.png"
 import taskManager1Img from "../../images/todoReact/todoReact1.png"
 import taskManager2Img from "../../images/todoReact/todoReact2.png"
+import ingredientImgPreview from "../../images/ingredient/ingredient-preview.jpg"
 import ingredientImg from "../../images/ingredient/ingredient.png"
 import ingredient1Img from "../../images/ingredient/ingredient1.png"
 import ingredient2Img from "../../images/ingredient/ingredient2.png"
@@ -52,7 +53,8 @@ import imageRecognitionImg from "../../images/imageRecognition/imageRecognition.
 import imageRecognitionImg1 from "../../images/imageRecognition/imageRecognition1.png"
 import imageRecognitionImg2 from "../../images/imageRecognition/imageRecognition2.png"
 import imageRecognitionImg3 from "../../images/imageRecognition/imageRecognition3.png"
-import inDevelopmentImg from "../../images/In Development.jpg"
+import openMindImg from "../../images/openMind/OpenMind.jpg"
+import backdropImg from "../../images/backdrop/backdropImage.jpg"
 
 const reactColorPicker = {
   title: "React Color Picker",
@@ -257,7 +259,8 @@ const taskManager = {
 }
 const ingredient = {
   title: "Ingredient",
-  description: "A web application to get food recipe",
+  description:
+    "A web application that helps you find food dishes, recipes and prepare ingredients",
   facts: [
     "Its in progress now",
     "uses Reactjs Framework",
@@ -267,6 +270,7 @@ const ingredient = {
     "Working on to add more features",
   ],
   img: [
+    ingredientImgPreview,
     ingredientImg,
     ingredient1Img,
     ingredient2Img,
@@ -309,7 +313,7 @@ const backDrop = {
     "User can capture images from the video",
     "In development, more features coming soon",
   ],
-  img: [inDevelopmentImg],
+  img: [backdropImg],
   github: "https://github.com/Prottoy2938/repository-is-for-private-project",
   page: "https://backdrop.vercel.app/",
 }
@@ -325,7 +329,7 @@ const openMind = {
     "Uses KNN Image Classification Model andTensorflowjs library",
     "Similar to Google's teachable machine classify image project",
   ],
-  img: [inDevelopmentImg],
+  img: [openMindImg],
   github: "https://github.com/cluster-11/open-mind",
   page: "https://cluster-11.github.io/open-mind/",
 }

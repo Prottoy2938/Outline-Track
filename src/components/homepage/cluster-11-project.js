@@ -28,7 +28,7 @@ const Cluster11Project = props => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className={classes.codeButton}>View code</button>
+            <button className={classes.codeButton}>View on GitHub</button>
           </a>
           <a
             href="https://cluster-11.vercel.app/"

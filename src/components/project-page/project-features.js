@@ -75,7 +75,7 @@ ProjectFeature.propTypes = {
   description: PropTypes.string,
   page: PropTypes.string,
   title: PropTypes.string,
-  facts: PropTypes.string,
+  facts: PropTypes.array,
 }
 
 export default withStyles(styles)(ProjectFeature)
